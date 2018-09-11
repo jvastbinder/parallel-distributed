@@ -231,14 +231,20 @@ parallel_match(void *thread_args)
 {
     thread_args_t *args = (thread_args_t *) thread_args;
     int pattern_length = strlen(args->pattern);
+    int local_matches = 0;
     char *seq_ptr = args->fasta->sequence + args->tid;
     char *last_match_location = args->fasta->sequence + args->fasta->cur_length - pattern_length;
 
     while(seq_ptr <= last_match_location) {
         if (strncmp(seq_ptr, args->pattern, pattern_length) == 0) {
-        pthread_mutex_lock(&matches_mutex);
-            matches++;
-        pthread_mutex_unlock(&matches_mutex);
+            local_matches++;
+            int rtn = pthread_mutex_trylock(&matches_mutex);
+            if(rtn == 0) {
+                matches += local_matches;
+                pthread_mutex_unlock(&matches_mutex);
+                local_matches = 0;
+            }
+
         }
         seq_ptr += args->num_threads;
     }
