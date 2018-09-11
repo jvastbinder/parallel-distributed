@@ -237,7 +237,7 @@ parallel_match(void *thread_args)
     while(seq_ptr <= last_match_location) {
         if (strncmp(seq_ptr, args->pattern, pattern_length) == 0) {
         pthread_mutex_lock(&matches_mutex);
-            matches += args->local_matches;
+            matches++;
         pthread_mutex_unlock(&matches_mutex);
         }
         seq_ptr += args->num_threads;
