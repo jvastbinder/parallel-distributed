@@ -5,7 +5,7 @@ CFLAGS=-Wall
 TAR=tar
 
 parallel: parallel-genome-search.o
-	$(CC) $< -o $@ -lz -g -pthread
+	$(CC) $< -o $@ -lz -pthread
 
 sg: sg.o
 	$(CC) $< -o $@ -lz

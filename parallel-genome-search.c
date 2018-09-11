@@ -34,6 +34,7 @@ typedef struct {
     int tid;
     int fasta_max_length;
     int num_threads;
+    int local_matches;
     char *pattern;
     fasta_t *fasta;
 } thread_args_t;
@@ -234,11 +235,11 @@ parallel_match(void *thread_args)
     char *last_match_location = args->fasta->sequence + args->fasta->cur_length - pattern_length;
 
     while(seq_ptr <= last_match_location) {
-        pthread_mutex_lock(&matches_mutex);
         if (strncmp(seq_ptr, args->pattern, pattern_length) == 0) {
-            matches++;
-        }
+        pthread_mutex_lock(&matches_mutex);
+            matches += args->local_matches;
         pthread_mutex_unlock(&matches_mutex);
+        }
         seq_ptr += args->num_threads;
     }
 
@@ -333,12 +334,12 @@ main(int argc, char **argv)
       thread_args[i].fasta = fasta;
       thread_args[i].num_threads = num_threads;
       rtn = pthread_create(&threads[i], NULL, parallel_match, &thread_args[i]);
-      //check_thread_rtn("create", rtn);
+      check_thread_rtn("create", rtn);
   }
 
   for (int i = 0;  i < num_threads;  i++) {
       rtn = pthread_join(threads[i], NULL);
-      //check_thread_rtn("join", rtn);
+      check_thread_rtn("join", rtn);
   }
   printf("    TOOK %5.3f seconds\n", now() - start_time);
 
