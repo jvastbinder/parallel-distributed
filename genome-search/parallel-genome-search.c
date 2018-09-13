@@ -11,7 +11,7 @@
 
 int verbose = 0;				/* Output more info at run time? */
 pthread_mutex_t matches_mutex;
-int matches = 0;
+//int matches = 0;
 
 /* Helpful constants */
 #define ONE_MEGA (long)(1024 * 1024)
@@ -231,20 +231,12 @@ parallel_match(void *thread_args)
 {
     thread_args_t *args = (thread_args_t *) thread_args;
     int pattern_length = strlen(args->pattern);
-    int local_matches = 0;
     char *seq_ptr = args->fasta->sequence + args->tid;
     char *last_match_location = args->fasta->sequence + args->fasta->cur_length - pattern_length;
 
     while(seq_ptr <= last_match_location) {
         if (strncmp(seq_ptr, args->pattern, pattern_length) == 0) {
-            local_matches++;
-            int rtn = pthread_mutex_trylock(&matches_mutex);
-            if(rtn == 0) {
-                matches += local_matches;
-                pthread_mutex_unlock(&matches_mutex);
-                local_matches = 0;
-            }
-
+            args->local_matches++;
         }
         seq_ptr += args->num_threads;
     }
@@ -334,17 +326,20 @@ main(int argc, char **argv)
   printf("MATCHING ...\n");
 
   double start_time = now();
+  int matches = 0;
   for (int i = 0;  i < num_threads;  i++) {
       thread_args[i].tid = i;
       thread_args[i].pattern = pattern;
       thread_args[i].fasta = fasta;
       thread_args[i].num_threads = num_threads;
+      thread_args[i].local_matches = 0;
       rtn = pthread_create(&threads[i], NULL, parallel_match, &thread_args[i]);
       check_thread_rtn("create", rtn);
   }
 
   for (int i = 0;  i < num_threads;  i++) {
       rtn = pthread_join(threads[i], NULL);
+      matches += thread_args[i].local_matches;
       check_thread_rtn("join", rtn);
   }
   printf("    TOOK %5.3f seconds\n", now() - start_time);
