@@ -145,7 +145,7 @@ parallel_convolve(void *args_pointer)
   init_image(output, rows, columns);
 
   for (int r = 1;  r < rows - 1;  r += 1) {
-	for (int c = 1 + args->tid;  c < columns - 1;  c+=1+args->tid) {
+	for (int c = 1 + args->tid;  c < columns - 1;  c += 1+args->tid) {
 	  for (int b = 0;  b < BYTES_PER_PIXEL;  b++) {
 		int value = 0;
 
@@ -367,7 +367,6 @@ main(int argc, char **argv)
       thread_args[i].tid = i;
       thread_args[i].input = input;
       thread_args[i].output = output;
-      //thread_args[i].kernel = selected_entry->kernel;
       memcpy(thread_args[i].kernel, selected_entry->kernel, sizeof(kernel_t));
       rtn = pthread_create(&threads[i], NULL, parallel_convolve, &thread_args[i]);
       check_thread_rtn("create", rtn);
