@@ -320,8 +320,8 @@ main(int argc, char **argv)
   check_thread_rtn("mutex init", rtn);
 
 
-  pthread_t threads[num_threads];
-  thread_args_t thread_args[num_threads];
+  pthread_t *threads = malloc(sizeof(pthread_t) * num_threads);
+  thread_args_t *thread_args = malloc(sizeof(thread_args_t) * num_threads);
 
   printf("MATCHING ...\n");
 
@@ -349,5 +349,7 @@ main(int argc, char **argv)
 
   /* Clean up and be done. */
   fasta_destroy(fasta);
+  free(threads);
+  free(thread_args);
   exit(0);
 }
