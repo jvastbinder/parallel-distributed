@@ -3,4 +3,5 @@
 *.swp
 *.png
 parallel
+serial
 sg

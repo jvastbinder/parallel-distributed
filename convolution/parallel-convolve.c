@@ -28,6 +28,7 @@ typedef int kernel_t[KERNEL_DIM][KERNEL_DIM];
 
 typedef struct {
   int tid;
+  int num_threads;
   kernel_t kernel;
   image_t *output;
   image_t *input;
@@ -145,7 +146,7 @@ parallel_convolve(void *args_pointer)
   init_image(output, rows, columns);
 
   for (int r = 1;  r < rows - 1;  r += 1) {
-	for (int c = 1 + args->tid;  c < columns - 1;  c += 1+args->tid) {
+	for (int c = 1 + args->tid;  c < columns - 1;  c += args->num_threads) {
 	  for (int b = 0;  b < BYTES_PER_PIXEL;  b++) {
 		int value = 0;
 
@@ -365,6 +366,7 @@ main(int argc, char **argv)
 
   for(int i = 0; i < num_threads; i++) {
       thread_args[i].tid = i;
+      thread_args[i].num_threads = num_threads;
       thread_args[i].input = input;
       thread_args[i].output = output;
       memcpy(thread_args[i].kernel, selected_entry->kernel, sizeof(kernel_t));
