@@ -145,20 +145,38 @@ parallel_convolve(void *args_pointer)
 
   init_image(output, rows, columns);
 
-  for (int r = 1;  r < rows - 1;  r += 1) {
-	for (int c = 1 + args->tid;  c < columns - 1;  c += args->num_threads) {
+  for (int r = 0;  r < rows;  r++) {
+	for (int c = 0 + args->tid;  c < columns;  c += args->num_threads) {
 	  for (int b = 0;  b < BYTES_PER_PIXEL;  b++) {
 		int value = 0;
-
 		if (b == ALPHA_OFFSET) {
 		  /* Retain the alpha channel. */
 		  value = input->pixels[IMG_BYTE(columns, r, c, b)];
 		} else {
 		  /* Convolve red, green, and blue. */
+          int R;
+          int C;
 		  for (int kr = 0;  kr < KERNEL_DIM;  kr++) {
 			for (int kc = 0;  kc < KERNEL_DIM;  kc++) {
-			  int R = r + (kr - half_dim);
-			  int C = c + (kc - half_dim);
+              if (r == 0) {
+                  R = 1 + r + (kr - half_dim);
+              }
+              else if (r == rows - 1) {
+                  R = -1 + r + (kr - half_dim);
+              }
+              else {
+                  R = r + (kr - half_dim);
+              }
+              if (c == 0) {
+                  C = 1 + c + (kc - half_dim);
+              }
+              else if (c == (columns - 1)) {
+                  C = -1 + c + (kc - half_dim);
+              }
+              else
+              {
+                  C = c + (kc - half_dim);
+              }
 			  value += kernel[kr][kc] * input->pixels[IMG_BYTE(columns, R, C, b)];
 			}
 		  }
