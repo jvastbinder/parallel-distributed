@@ -4,8 +4,8 @@ CC=gcc
 CFLAGS=-Wall
 TAR=tar
 
-lode: lodepng.o
-	$(CC) $< -c -o $@
+generator: mat-gen.o
+	$(CC) $< -o $@
 
 extra-credit: parallel-convolve-ec.o
 	$(CC) $< -c -o lodepng.o lodepng.c
