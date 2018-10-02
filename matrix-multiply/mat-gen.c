@@ -9,14 +9,14 @@ usage(char *prog_name)
 {
     fprintf(stderr, "%s: -o <filename> -m <rows> -n <cols> [-h]\n", prog_name);
     fprintf(stderr, "  -o   The name of the output file\n");
-    fprintf(stderr, "  -m   The number of rows in the matrix\n");
-    fprintf(stderr, "  -n   The number of columns in the matrix\n");
+    fprintf(stderr, "  -r   The number of rows in the matrix\n");
+    fprintf(stderr, "  -c   The number of columns in the matrix\n");
     fprintf(stderr, "  -h   Prints the usage\n");
     exit(1);
 }
 
-void gen_matrix(int* matrix, int m, int n){
-    for(int i = 0; i < (m * n); i++) {
+void gen_matrix(int* matrix, int c, int r){
+    for(int i = 0; i < (r * c); i++) {
             matrix[i] = rand();
         }
 }
@@ -29,18 +29,18 @@ main(int argc, char **argv)
         usage(prog_name);
     }
 
-    int ch, m, n;
+    int ch, r, c;
     char *output_file;
-    while ((ch = getopt(argc, argv, "o:m:n:h")) != -1) {
+    while ((ch = getopt(argc, argv, "o:r:c:h")) != -1) {
         switch (ch) {
             case 'o':
                 output_file = optarg;
                 break;
-            case 'm':
-                m = atol(optarg);
+            case 'r':
+                r = atol(optarg);
                 break;
-            case 'n':
-                n = atol(optarg);
+            case 'c':
+                c = atol(optarg);
                 break;
             case 'h':
             default:
@@ -50,12 +50,13 @@ main(int argc, char **argv)
     argc -= optind;
     argv += optind;
 
-    int *matrix = malloc(sizeof(int) * m * n);
-    gen_matrix(matrix, m, n);
-    write_matrix(matrix, output_file, m, n);
+    int *matrix = malloc(sizeof(int) * r * c);
+    gen_matrix(matrix, r, c);
+    write_matrix(matrix, output_file, r, c);
     free(matrix);
 
     printf("Output file: %s\n", output_file);
-    printf("M: %d\n", m);
-    printf("N: %d\n", n);
+    printf("R: %d\n", r);
+    printf("C: %d\n", c);
 }
+

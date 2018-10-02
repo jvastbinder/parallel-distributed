@@ -2,30 +2,37 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include "mat-io.h"
+
 #define MAT_ELT(mat, cols, i, j) *(mat + (i * cols) + j)
 
-void read_matrix(char *filename, int **matrix, int *m, int *n) {
-    FILE *input = fopen(filename, "r");
-    fscanf(input, "%d %d\n", *m, *n);
-    printf("%d %d\n", *m, *n);
+void usage(char *prog_name)
+{
+    fprintf(stderr, "%s: -a <filename> -b <filename> -o <filename> [-h]\n", prog_name);
+    fprintf(stderr, "  -a   The name of the first matrix input file\n");
+    fprintf(stderr, "  -b   The name of the second matrix input file\n");
+    fprintf(stderr, "  -o   The name of the output file\n");
+    fprintf(stderr, "  -h   Prints the usage\n");
+    exit(1);
 }
+
 
 void
 mat_print(char *msge, int *a, int m, int n) 
 {
-  printf("\n== %s ==\n%7s", msge, "");
-  for (int j = 0;  j < n;  j++) {
-    printf("%6d|", j);
-  }
-  printf("\n");
-
-  for (int i = 0;  i < m;  i++) {
-    printf("%5d|", i);
+    printf("\n== %s ==\n%7s", msge, "");
     for (int j = 0;  j < n;  j++) {
-      printf("%7d", MAT_ELT(a, n, i, j));
+        printf("%6d|", j);
     }
     printf("\n");
-  }
+
+    for (int i = 0;  i < m;  i++) {
+        printf("%5d|", i);
+        for (int j = 0;  j < n;  j++) {
+            printf("%7d", MAT_ELT(a, n, i, j));
+        }
+        printf("\n");
+    }
 }
 
 void
@@ -43,27 +50,45 @@ mat_mult(int *c, int *a, int *b, int m, int n, int p)
 int
 main(int argc, char **argv)
 {
-  int A[3][4] = {
-    { 1, 3, 6, 7 },
-    { 4, 6, 3, 9 },
-    { 5, 5, 0, 2 }
-  };
+    char *prog_name = argv[0];
+    if(argc < 4) {
+        usage(prog_name);
+    }
 
-  int B[4][2] = {
-    { 4, 2 },
-    { 6, 3 },
-    { 6, 9 },
-    { 0, 9 }
-  };
+    int ch;
+    char *a_file, *b_file, *o_file;
+    while ((ch = getopt(argc, argv, "a:b:o:h")) != -1) {
+        switch (ch) {
+            case 'a':
+                a_file = optarg;
+                break;
+            case 'b':
+                b_file = optarg;
+                break;
+            case 'o':
+                o_file = optarg;
+                break;
+            case 'h':
+            default:
+                usage(prog_name);
+        }
+    }
+    argc -= optind;
+    argv += optind;
 
-  int C[3][2] = {
-    { 0, 0 },
-    { 0, 0 },
-    { 0, 0 }
-  };
+    int *a, *b, *c;
+    int m, n, p;
 
-  mat_mult((int *)C, (int *)A, (int *)B, 3, 4, 2);
-  mat_print("A", (int *)A, 3, 4);
-  mat_print("B", (int *)B, 4, 2);
-  mat_print("C", (int *)C, 3, 2);
+    read_matrix(a, a_file);
+    read_matrix(b, b_file);
+
+
+    mat_mult((int *)c, (int *)a, (int *)b, m, n, p);
+    mat_print("A", (int *)a, m, n);
+    mat_print("B", (int *)b, n, p);
+    mat_print("C", (int *)c, m, p);
+
+    free(a);
+    free(b);
+    free(c);
 }
