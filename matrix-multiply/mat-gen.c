@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include "mat-io.h"
+
 void
 usage(char *prog_name)
 {
@@ -13,19 +15,10 @@ usage(char *prog_name)
     exit(1);
 }
 
-void write_matrix(char* filename, int m, int n){
-    FILE *output = fopen(filename, "w");
-
-    int rando;
-    fprintf(output, "%d %d\n", m, n);
-    for(int i = 0; i < m; i++) {
-        for(int j = 0; j < n; j++) {
-            rando = rand();
-            fprintf(output, "%d ", rando);
+void gen_matrix(int* matrix, int m, int n){
+    for(int i = 0; i < (m * n); i++) {
+            matrix[i] = rand();
         }
-        fprintf(output, "\n");
-    }
-    fclose(output);
 }
 
 int
@@ -57,10 +50,12 @@ main(int argc, char **argv)
     argc -= optind;
     argv += optind;
 
-    write_matrix(output_file, m, n);
+    int *matrix = malloc(sizeof(int) * m * n);
+    gen_matrix(matrix, m, n);
+    write_matrix(matrix, output_file, m, n);
+    free(matrix);
 
     printf("Output file: %s\n", output_file);
     printf("M: %d\n", m);
     printf("N: %d\n", n);
-
 }

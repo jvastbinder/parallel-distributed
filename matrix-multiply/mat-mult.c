@@ -1,6 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 #define MAT_ELT(mat, cols, i, j) *(mat + (i * cols) + j)
+
+void read_matrix(char *filename, int **matrix, int *m, int *n) {
+    FILE *input = fopen(filename, "r");
+    fscanf(input, "%d %d\n", *m, *n);
+    printf("%d %d\n", *m, *n);
+}
 
 void
 mat_print(char *msge, int *a, int m, int n) 
