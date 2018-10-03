@@ -4,8 +4,6 @@
 
 #include "mat-io.h"
 
-#define MAT_ELT(mat, cols, i, j) *(mat + (i * cols) + j)
-
 void usage(char *prog_name)
 {
     fprintf(stderr, "%s: -a <filename> -b <filename> -o <filename> [-h]\n", prog_name);
@@ -18,18 +16,11 @@ void usage(char *prog_name)
 
 
 void
-mat_print(char *msge, int *a, int m, int n) 
+mat_print(char *msge, int *matrix, int r, int c) 
 {
-    printf("\n== %s ==\n%7s", msge, "");
-    for (int j = 0;  j < n;  j++) {
-        printf("%6d|", j);
-    }
-    printf("\n");
-
-    for (int i = 0;  i < m;  i++) {
-        printf("%5d|", i);
-        for (int j = 0;  j < n;  j++) {
-            printf("%7d", MAT_ELT(a, n, i, j));
+    for(int i = 0; i < r; i++){
+        for(int j = 0; j < c; j++){
+            printf("%d ", matrix[(i*r) + j]);
         }
         printf("\n");
     }
@@ -38,13 +29,20 @@ mat_print(char *msge, int *a, int m, int n)
 void
 mat_mult(int *c, int *a, int *b, int m, int n, int p)
 {
-  for (int i = 0;  i < m;  i++) {
-    for (int j = 0;  j < p;  j++) {
-      for (int k = 0;  k < n;  k++) {
-        MAT_ELT(c, p, i, j) += MAT_ELT(a, n, i, k) * MAT_ELT(b, p, k, j);
-      }
+    int sum = 0;
+    int x = 0;
+    int y = 0;
+    for (int i = 0;  i < m;  i++) {
+        for (int j = 0;  j < p;  j++) {
+            for (int k = 0;  k < n;  k++) {
+                x = a[(i * m) + k];
+                y = b[(j * n) + k];
+                printf("%d %d\n", x, y);
+                sum += x * y;
+            }
+            c[i * m + j] = sum;
+        }
     }
-  }
 }
 
 int
@@ -79,16 +77,15 @@ main(int argc, char **argv)
     int *a, *b, *c;
     int m, n, p;
 
-    read_matrix(a, a_file);
-    read_matrix(b, b_file);
+    read_matrix(a, &m, &n, a_file);
+    read_matrix(b, &n, &p, b_file);
+    mat_print("C", a, m, n);
+    mat_print("C", b, n, p);
+    c = malloc(sizeof(int) * m * p);
 
+    mat_mult(c, a, b, m, n, p);
+    mat_print("C", c, m, p);
+    
+    write_matrix(c, o_file, m, p);
 
-    mat_mult((int *)c, (int *)a, (int *)b, m, n, p);
-    mat_print("A", (int *)a, m, n);
-    mat_print("B", (int *)b, n, p);
-    mat_print("C", (int *)c, m, p);
-
-    free(a);
-    free(b);
-    free(c);
 }

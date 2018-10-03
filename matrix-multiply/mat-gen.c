@@ -17,8 +17,8 @@ usage(char *prog_name)
 
 void gen_matrix(int* matrix, int c, int r){
     for(int i = 0; i < (r * c); i++) {
-            matrix[i] = rand();
-        }
+            matrix[i] = rand() % 50;
+    }
 }
 
 int

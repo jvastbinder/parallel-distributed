@@ -1,19 +1,19 @@
 # Makefile for Genome homework
 
 CC=gcc
-CFLAGS=-Wall
+CFLAGS=-Wall -g
 TAR=tar
 
 generator: mat-gen.o mat-io.o
-	$(CC) $< -c -o mat-io.o mat-io.c
-	$(CC) $< -o $@ mat-io.o 
+	$(CC) $< -g -c -o mat-io.o mat-io.c
+	$(CC) $< -g -o $@ mat-io.o 
 
 io: mat-io.o
-	$(CC) $< -c -o $@
+	$(CC) $< -g -c -o $@
 
 serial: mat-mult.o mat-io.o
-	$(CC) $< -c -o mat-io.o mat-io.c
-	$(CC) $< -o $@ mat-io.o
+	$(CC) $< -g -c -o mat-io.o mat-io.c
+	$(CC) $< -g -o $@ mat-io.o
 
 cereal:
 	"reese's puffs"
