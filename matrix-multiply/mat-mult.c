@@ -20,7 +20,7 @@ mat_print(char *msge, int *matrix, int r, int c)
 {
     for(int i = 0; i < r; i++){
         for(int j = 0; j < c; j++){
-            printf("%d ", matrix[(i*r) + j]);
+            printf("%d ", matrix[(i * r) + j]);
         }
         printf("\n");
     }
@@ -29,18 +29,17 @@ mat_print(char *msge, int *matrix, int r, int c)
 void
 mat_mult(int *c, int *a, int *b, int m, int n, int p)
 {
-    int sum = 0;
     int x = 0;
     int y = 0;
     for (int i = 0;  i < m;  i++) {
         for (int j = 0;  j < p;  j++) {
+            c[i * m + j] = 0;
             for (int k = 0;  k < n;  k++) {
                 x = a[(i * m) + k];
-                y = b[(j * n) + k];
+                y = b[(k * n) + j];
                 printf("%d %d\n", x, y);
-                sum += x * y;
+                c[(i * m) + j] += x * y;
             }
-            c[i * m + j] = sum;
         }
     }
 }
@@ -74,17 +73,24 @@ main(int argc, char **argv)
     argc -= optind;
     argv += optind;
 
-    int *a, *b, *c;
     int m, n, p;
+    read_dimensions(&m, &n, a_file);
+    read_dimensions(&n, &p, b_file);
 
-    read_matrix(a, &m, &n, a_file);
-    read_matrix(b, &n, &p, b_file);
+    int *a = malloc(sizeof(int) * m * n);
+    int *b = malloc(sizeof(int) * n * p);
+    int *c = malloc(sizeof(int) * m * p);
+    printf("here\n");
+    read_matrix(a, a_file);
+    printf("here\n");
+    read_matrix(b, b_file);
+    printf("here\n");
+
     mat_print("C", a, m, n);
     mat_print("C", b, n, p);
-    c = malloc(sizeof(int) * m * p);
 
     mat_mult(c, a, b, m, n, p);
-    mat_print("C", c, m, p);
+    //mat_print("C", c, m, p);
     
     write_matrix(c, o_file, m, p);
 
