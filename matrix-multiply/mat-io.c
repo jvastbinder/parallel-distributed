@@ -27,8 +27,10 @@ void write_matrix(int *matrix, char *filename, int r, int c){
     fprintf(output, "%d %d\n", r, c);
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
+            printf("%d ", matrix[(i * r) + j]);
             fprintf(output, "%d ", matrix[(i * r) + j]);
         }
+        printf("\n");
         fprintf(output, "\n");
     }
     fclose(output);

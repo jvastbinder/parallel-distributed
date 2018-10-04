@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <time.h>
 
 #include "mat-io.h"
 
@@ -15,15 +16,21 @@ usage(char *prog_name)
     exit(1);
 }
 
-void gen_matrix(int* matrix, int c, int r){
-    for(int i = 0; i < (r * c); i++) {
-            matrix[i] = rand() % 50;
+void gen_matrix(int* matrix, int r, int c){
+    for(int i = 0; i < r; i++) {
+        for(int j = 0; j < c; j++) {
+            matrix[(i * r) + j] = rand() % 10;
+            printf("%d ",matrix[(i * r) + j]);
+        }
+        printf("\n");
     }
+    printf("\n");
 }
 
 int
 main(int argc, char **argv)
 {
+    srand(time(0));
     char *prog_name = argv[0];
     if(argc < 4) {
         usage(prog_name);
@@ -50,13 +57,12 @@ main(int argc, char **argv)
     argc -= optind;
     argv += optind;
 
-    int *matrix = malloc(sizeof(int) * r * c);
-    gen_matrix(matrix, r, c);
-    write_matrix(matrix, output_file, r, c);
-    free(matrix);
-
     printf("Output file: %s\n", output_file);
     printf("R: %d\n", r);
     printf("C: %d\n", c);
+    int *matrix = malloc(sizeof(int) * r * c);
+    gen_matrix(matrix, r, c);
+    write_matrix(matrix, output_file, r, c);
+
 }
 

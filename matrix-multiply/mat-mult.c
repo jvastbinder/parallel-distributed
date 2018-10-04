@@ -37,7 +37,6 @@ mat_mult(int *c, int *a, int *b, int m, int n, int p)
             for (int k = 0;  k < n;  k++) {
                 x = a[(i * m) + k];
                 y = b[(k * n) + j];
-                printf("%d %d\n", x, y);
                 c[(i * m) + j] += x * y;
             }
         }
@@ -80,11 +79,8 @@ main(int argc, char **argv)
     int *a = malloc(sizeof(int) * m * n);
     int *b = malloc(sizeof(int) * n * p);
     int *c = malloc(sizeof(int) * m * p);
-    printf("here\n");
     read_matrix(a, a_file);
-    printf("here\n");
     read_matrix(b, b_file);
-    printf("here\n");
 
     mat_print("C", a, m, n);
     mat_print("C", b, n, p);
