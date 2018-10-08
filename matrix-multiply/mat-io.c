@@ -14,7 +14,7 @@ void read_matrix(int *matrix, char* filename){
     fscanf(input, "%d %d\n", &r, &c);
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
-            if(!fscanf(input, "%d ", &matrix[(i * r) + j])){
+            if(!fscanf(input, "%d ", &matrix[(i * c) + j])){
                 break;
             }
         }
@@ -27,10 +27,8 @@ void write_matrix(int *matrix, char *filename, int r, int c){
     fprintf(output, "%d %d\n", r, c);
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
-            printf("%d ", matrix[(i * r) + j]);
-            fprintf(output, "%d ", matrix[(i * r) + j]);
+            fprintf(output, "%d ", matrix[(i * c) + j]);
         }
-        printf("\n");
         fprintf(output, "\n");
     }
     fclose(output);

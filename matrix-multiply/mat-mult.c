@@ -20,7 +20,7 @@ mat_print(char *msge, int *matrix, int r, int c)
 {
     for(int i = 0; i < r; i++){
         for(int j = 0; j < c; j++){
-            printf("%d ", matrix[(i * r) + j]);
+            printf("%d ", matrix[(i * c) + j]);
         }
         printf("\n");
     }
@@ -33,11 +33,11 @@ mat_mult(int *c, int *a, int *b, int m, int n, int p)
     int y = 0;
     for (int i = 0;  i < m;  i++) {
         for (int j = 0;  j < p;  j++) {
-            c[i * m + j] = 0;
+            c[i * p + j] = 0;
             for (int k = 0;  k < n;  k++) {
-                x = a[(i * m) + k];
-                y = b[(k * n) + j];
-                c[(i * m) + j] += x * y;
+                x = a[(i * n) + k];
+                y = b[(k * p) + j];
+                c[(i * p) + j] += x * y;
             }
         }
     }

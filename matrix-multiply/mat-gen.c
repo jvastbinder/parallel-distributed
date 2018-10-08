@@ -19,8 +19,8 @@ usage(char *prog_name)
 void gen_matrix(int* matrix, int r, int c){
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
-            matrix[(i * r) + j] = rand() % 10;
-            printf("%d ",matrix[(i * r) + j]);
+            matrix[(i * c) + j] = rand() % 10;
+            printf("%d ",matrix[(i * c) + j]);
         }
         printf("\n");
     }
