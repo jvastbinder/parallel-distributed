@@ -5,6 +5,8 @@
 
 #include "mat-io.h"
 
+int debug = 0;
+
 void
 usage(char *prog_name)
 {
@@ -19,7 +21,10 @@ usage(char *prog_name)
 void gen_matrix(int* matrix, int r, int c){
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
-            matrix[(i * c) + j] = rand() % 10;
+            if(debug == 1)
+                matrix[(i * c) + j] = rand() % 10;
+            else
+                matrix[(i * c) + j] = rand();
             printf("%d ",matrix[(i * c) + j]);
         }
         printf("\n");
@@ -38,8 +43,11 @@ main(int argc, char **argv)
 
     int ch, r, c;
     char *output_file;
-    while ((ch = getopt(argc, argv, "o:r:c:h")) != -1) {
+    while ((ch = getopt(argc, argv, "d:o:r:c:h")) != -1) {
         switch (ch) {
+            case 'd':
+                debug = 1;
+                break;
             case 'o':
                 output_file = optarg;
                 break;
