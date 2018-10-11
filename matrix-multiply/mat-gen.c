@@ -21,15 +21,9 @@ usage(char *prog_name)
 void gen_matrix(int* matrix, int r, int c){
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
-            if(debug == 1)
-                matrix[(i * c) + j] = rand() % 10;
-            else
-                matrix[(i * c) + j] = rand();
-            printf("%d ",matrix[(i * c) + j]);
+            matrix[(i * c) + j] = rand() % 10;
         }
-        printf("\n");
     }
-    printf("\n");
 }
 
 int
@@ -43,11 +37,8 @@ main(int argc, char **argv)
 
     int ch, r, c;
     char *output_file;
-    while ((ch = getopt(argc, argv, "d:o:r:c:h")) != -1) {
+    while ((ch = getopt(argc, argv, "o:r:c:h")) != -1) {
         switch (ch) {
-            case 'd':
-                debug = 1;
-                break;
             case 'o':
                 output_file = optarg;
                 break;
