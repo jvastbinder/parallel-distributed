@@ -51,14 +51,14 @@ void distribute_matrices(int num_threads, char *a_file, char *b_file, int m, int
     }
 }
 
-void compute_section(int *c, int i, int tid, int num_threads, int *a, int *b, int m, int n, int p) {
+void compute_section(int *c, int big_i, int tid, int num_threads, int *a, int *b, int m, int n, int p) {
     int num_rows = m / num_threads;
     int x, y, c_offset;
-    for(int i = 0; i < num_rows; i++) {
+    for(int i = 0; i < m/num_threads; i++) {
         for(int j = 0; j < p; j++) {
             c_offset = (i * p) + j;
             c[c_offset] = 0;
-            for(int k = 0; k < n; k++) {
+            for(int k = 0; k < n/num_threads; k++) {
                 x = a[(i * n) + k];
                 y = b[(k * p) + j];
                 c[c_offset] += x * y;
