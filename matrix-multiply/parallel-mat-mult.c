@@ -176,11 +176,11 @@ int main(int argc, char ** argv) {
     }
     else{
         int *c = malloc(sizeof(int) * m * p);
-        memcpy(c, c_part, (sizeof(int) * portion_of_c));
         for(int i = 1; i < num_threads; i++) {
             MPI_Recv((void *)c_part, portion_of_c, MPI_INT, i, 1, MPI_COMM_WORLD, NULL);
             memcpy(&c[(i * portion_of_c) - 1], c_part, (sizeof(int) * portion_of_c));
         }
+        memcpy(c, c_part, (sizeof(int) * portion_of_c));
         write_matrix(c, o_file, n, p);
     }
 
