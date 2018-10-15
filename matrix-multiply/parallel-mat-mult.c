@@ -58,21 +58,35 @@ void distribute_matrices(int num_threads, char *a_file, char *b_file, int m, int
             MPI_Send((void *)b_part, portion_of_b, MPI_INT, num_threads - 1 - i, 1, MPI_COMM_WORLD);
     }
 }
+int calc_next_c_idx(int big_i, int tid, int num_threads, int m, int n, int p) {
+    int idx, c_section;
+    c_section = (n * p) / num_threads;
+    idx = big_i * (c_section / num_threads);
+    return idx;
+}
 
 void compute_section(int *c, int big_i, int tid, int num_threads, int *a, int *b, int m, int n, int p) {
     int num_rows = m / num_threads;
     int x, y, c_idx;
-    c_idx = big_i * ((m * p) / num_threads);
+    c_idx = calc_next_c_idx(big_i, tid, num_threads, m, n, p);
     for(int i = 0; i < m/num_threads; i++) {
-        for(int j = 0; j < p; j++) {
-            c_idx = (i * p) + j;
+        for(int j = 0; j < n/num_threads; j++) {
             c[c_idx] = 0;
-            for(int k = 0; k < n/num_threads; k++) {
+            for(int k = 0; k < p; k++) {
                 x = a[(i * n) + k];
-                y = b[(k * p) + j];
+                y = b[(j * p) + k];
+                if(tid == 1) {
+                    printf("C_idx: %d\n%d * %d\n", c_idx, x, y);
+                }
                 c[c_idx] += x * y;
             }
+        if(tid == 1)
+            printf("C_idx: %d\n", c_idx);
+        c_idx++;
         }
+    }
+    if(tid == 1) {
+        printf("\n");
     }
 }
 

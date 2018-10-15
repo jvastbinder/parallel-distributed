@@ -1,0 +1,3600 @@
+C_idx: 0
+2 * 8
+C_idx: 0
+8 * 7
+C_idx: 0
+3 * 2
+C_idx: 0
+7 * 3
+C_idx: 0
+4 * 6
+C_idx: 0
+2 * 2
+C_idx: 0
+6 * 7
+C_idx: 0
+5 * 6
+C_idx: 0
+3 * 5
+C_idx: 0
+8 * 9
+C_idx: 0
+7 * 0
+C_idx: 0
+2 * 2
+C_idx: 0
+C_idx: 1
+2 * 2
+C_idx: 1
+8 * 8
+C_idx: 1
+3 * 4
+C_idx: 1
+7 * 4
+C_idx: 1
+4 * 5
+C_idx: 1
+2 * 3
+C_idx: 1
+6 * 1
+C_idx: 1
+5 * 4
+C_idx: 1
+3 * 8
+C_idx: 1
+8 * 5
+C_idx: 1
+7 * 8
+C_idx: 1
+2 * 3
+C_idx: 1
+C_idx: 2
+2 * 6
+C_idx: 2
+8 * 1
+C_idx: 2
+3 * 0
+C_idx: 2
+7 * 8
+C_idx: 2
+4 * 8
+C_idx: 2
+2 * 1
+C_idx: 2
+6 * 2
+C_idx: 2
+5 * 4
+C_idx: 2
+3 * 0
+C_idx: 2
+8 * 6
+C_idx: 2
+7 * 8
+C_idx: 2
+2 * 0
+C_idx: 2
+C_idx: 3
+2 * 9
+C_idx: 3
+8 * 8
+C_idx: 3
+3 * 8
+C_idx: 3
+7 * 2
+C_idx: 3
+4 * 3
+C_idx: 3
+2 * 0
+C_idx: 3
+6 * 5
+C_idx: 3
+5 * 5
+C_idx: 3
+3 * 9
+C_idx: 3
+8 * 7
+C_idx: 3
+7 * 4
+C_idx: 3
+2 * 4
+C_idx: 3
+C_idx: 4
+2 * 1
+C_idx: 4
+8 * 0
+C_idx: 4
+3 * 7
+C_idx: 4
+7 * 9
+C_idx: 4
+4 * 0
+C_idx: 4
+2 * 0
+C_idx: 4
+6 * 7
+C_idx: 4
+5 * 1
+C_idx: 4
+3 * 8
+C_idx: 4
+8 * 8
+C_idx: 4
+7 * 3
+C_idx: 4
+2 * 2
+C_idx: 4
+C_idx: 5
+2 * 6
+C_idx: 5
+8 * 0
+C_idx: 5
+3 * 5
+C_idx: 5
+7 * 5
+C_idx: 5
+4 * 3
+C_idx: 5
+2 * 8
+C_idx: 5
+6 * 0
+C_idx: 5
+5 * 8
+C_idx: 5
+3 * 1
+C_idx: 5
+8 * 5
+C_idx: 5
+7 * 3
+C_idx: 5
+2 * 3
+C_idx: 5
+C_idx: 6
+2 * 7
+C_idx: 6
+8 * 9
+C_idx: 6
+3 * 9
+C_idx: 6
+7 * 2
+C_idx: 6
+4 * 5
+C_idx: 6
+2 * 0
+C_idx: 6
+6 * 2
+C_idx: 6
+5 * 4
+C_idx: 6
+3 * 3
+C_idx: 6
+8 * 7
+C_idx: 6
+7 * 8
+C_idx: 6
+2 * 7
+C_idx: 6
+C_idx: 7
+2 * 7
+C_idx: 7
+8 * 1
+C_idx: 7
+3 * 5
+C_idx: 7
+7 * 8
+C_idx: 7
+4 * 4
+C_idx: 7
+2 * 4
+C_idx: 7
+6 * 5
+C_idx: 7
+5 * 3
+C_idx: 7
+3 * 8
+C_idx: 7
+8 * 6
+C_idx: 7
+7 * 9
+C_idx: 7
+2 * 2
+C_idx: 7
+C_idx: 8
+2 * 9
+C_idx: 8
+8 * 5
+C_idx: 8
+3 * 7
+C_idx: 8
+7 * 5
+C_idx: 8
+4 * 9
+C_idx: 8
+2 * 4
+C_idx: 8
+6 * 8
+C_idx: 8
+5 * 2
+C_idx: 8
+3 * 2
+C_idx: 8
+8 * 1
+C_idx: 8
+7 * 1
+C_idx: 8
+2 * 0
+C_idx: 8
+C_idx: 9
+2 * 3
+C_idx: 9
+8 * 2
+C_idx: 9
+3 * 5
+C_idx: 9
+7 * 4
+C_idx: 9
+4 * 5
+C_idx: 9
+2 * 0
+C_idx: 9
+6 * 3
+C_idx: 9
+5 * 5
+C_idx: 9
+3 * 7
+C_idx: 9
+8 * 1
+C_idx: 9
+7 * 1
+C_idx: 9
+2 * 3
+C_idx: 9
+C_idx: 10
+2 * 7
+C_idx: 10
+8 * 2
+C_idx: 10
+3 * 4
+C_idx: 10
+7 * 6
+C_idx: 10
+4 * 4
+C_idx: 10
+2 * 8
+C_idx: 10
+6 * 9
+C_idx: 10
+5 * 5
+C_idx: 10
+3 * 3
+C_idx: 10
+8 * 4
+C_idx: 10
+7 * 8
+C_idx: 10
+2 * 9
+C_idx: 10
+C_idx: 11
+2 * 8
+C_idx: 11
+8 * 9
+C_idx: 11
+3 * 0
+C_idx: 11
+7 * 7
+C_idx: 11
+4 * 6
+C_idx: 11
+2 * 3
+C_idx: 11
+6 * 8
+C_idx: 11
+5 * 4
+C_idx: 11
+3 * 1
+C_idx: 11
+8 * 2
+C_idx: 11
+7 * 2
+C_idx: 11
+2 * 1
+C_idx: 11
+C_idx: 12
+2 * 8
+C_idx: 12
+3 * 7
+C_idx: 12
+3 * 2
+C_idx: 12
+1 * 3
+C_idx: 12
+3 * 6
+C_idx: 12
+5 * 2
+C_idx: 12
+2 * 7
+C_idx: 12
+5 * 6
+C_idx: 12
+7 * 5
+C_idx: 12
+6 * 9
+C_idx: 12
+6 * 0
+C_idx: 12
+3 * 2
+C_idx: 12
+C_idx: 13
+2 * 2
+C_idx: 13
+3 * 8
+C_idx: 13
+3 * 4
+C_idx: 13
+1 * 4
+C_idx: 13
+3 * 5
+C_idx: 13
+5 * 3
+C_idx: 13
+2 * 1
+C_idx: 13
+5 * 4
+C_idx: 13
+7 * 8
+C_idx: 13
+6 * 5
+C_idx: 13
+6 * 8
+C_idx: 13
+3 * 3
+C_idx: 13
+C_idx: 14
+2 * 6
+C_idx: 14
+3 * 1
+C_idx: 14
+3 * 0
+C_idx: 14
+1 * 8
+C_idx: 14
+3 * 8
+C_idx: 14
+5 * 1
+C_idx: 14
+2 * 2
+C_idx: 14
+5 * 4
+C_idx: 14
+7 * 0
+C_idx: 14
+6 * 6
+C_idx: 14
+6 * 8
+C_idx: 14
+3 * 0
+C_idx: 14
+C_idx: 15
+2 * 9
+C_idx: 15
+3 * 8
+C_idx: 15
+3 * 8
+C_idx: 15
+1 * 2
+C_idx: 15
+3 * 3
+C_idx: 15
+5 * 0
+C_idx: 15
+2 * 5
+C_idx: 15
+5 * 5
+C_idx: 15
+7 * 9
+C_idx: 15
+6 * 7
+C_idx: 15
+6 * 4
+C_idx: 15
+3 * 4
+C_idx: 15
+C_idx: 16
+2 * 1
+C_idx: 16
+3 * 0
+C_idx: 16
+3 * 7
+C_idx: 16
+1 * 9
+C_idx: 16
+3 * 0
+C_idx: 16
+5 * 0
+C_idx: 16
+2 * 7
+C_idx: 16
+5 * 1
+C_idx: 16
+7 * 8
+C_idx: 16
+6 * 8
+C_idx: 16
+6 * 3
+C_idx: 16
+3 * 2
+C_idx: 16
+C_idx: 17
+2 * 6
+C_idx: 17
+3 * 0
+C_idx: 17
+3 * 5
+C_idx: 17
+1 * 5
+C_idx: 17
+3 * 3
+C_idx: 17
+5 * 8
+C_idx: 17
+2 * 0
+C_idx: 17
+5 * 8
+C_idx: 17
+7 * 1
+C_idx: 17
+6 * 5
+C_idx: 17
+6 * 3
+C_idx: 17
+3 * 3
+C_idx: 17
+C_idx: 18
+2 * 7
+C_idx: 18
+3 * 9
+C_idx: 18
+3 * 9
+C_idx: 18
+1 * 2
+C_idx: 18
+3 * 5
+C_idx: 18
+5 * 0
+C_idx: 18
+2 * 2
+C_idx: 18
+5 * 4
+C_idx: 18
+7 * 3
+C_idx: 18
+6 * 7
+C_idx: 18
+6 * 8
+C_idx: 18
+3 * 7
+C_idx: 18
+C_idx: 19
+2 * 7
+C_idx: 19
+3 * 1
+C_idx: 19
+3 * 5
+C_idx: 19
+1 * 8
+C_idx: 19
+3 * 4
+C_idx: 19
+5 * 4
+C_idx: 19
+2 * 5
+C_idx: 19
+5 * 3
+C_idx: 19
+7 * 8
+C_idx: 19
+6 * 6
+C_idx: 19
+6 * 9
+C_idx: 19
+3 * 2
+C_idx: 19
+C_idx: 20
+2 * 9
+C_idx: 20
+3 * 5
+C_idx: 20
+3 * 7
+C_idx: 20
+1 * 5
+C_idx: 20
+3 * 9
+C_idx: 20
+5 * 4
+C_idx: 20
+2 * 8
+C_idx: 20
+5 * 2
+C_idx: 20
+7 * 2
+C_idx: 20
+6 * 1
+C_idx: 20
+6 * 1
+C_idx: 20
+3 * 0
+C_idx: 20
+C_idx: 21
+2 * 3
+C_idx: 21
+3 * 2
+C_idx: 21
+3 * 5
+C_idx: 21
+1 * 4
+C_idx: 21
+3 * 5
+C_idx: 21
+5 * 0
+C_idx: 21
+2 * 3
+C_idx: 21
+5 * 5
+C_idx: 21
+7 * 7
+C_idx: 21
+6 * 1
+C_idx: 21
+6 * 1
+C_idx: 21
+3 * 3
+C_idx: 21
+C_idx: 22
+2 * 7
+C_idx: 22
+3 * 2
+C_idx: 22
+3 * 4
+C_idx: 22
+1 * 6
+C_idx: 22
+3 * 4
+C_idx: 22
+5 * 8
+C_idx: 22
+2 * 9
+C_idx: 22
+5 * 5
+C_idx: 22
+7 * 3
+C_idx: 22
+6 * 4
+C_idx: 22
+6 * 8
+C_idx: 22
+3 * 9
+C_idx: 22
+C_idx: 23
+2 * 8
+C_idx: 23
+3 * 9
+C_idx: 23
+3 * 0
+C_idx: 23
+1 * 7
+C_idx: 23
+3 * 6
+C_idx: 23
+5 * 3
+C_idx: 23
+2 * 8
+C_idx: 23
+5 * 4
+C_idx: 23
+7 * 1
+C_idx: 23
+6 * 2
+C_idx: 23
+6 * 2
+C_idx: 23
+3 * 1
+C_idx: 23
+C_idx: 24
+6 * 8
+C_idx: 24
+2 * 7
+C_idx: 24
+4 * 2
+C_idx: 24
+8 * 3
+C_idx: 24
+8 * 6
+C_idx: 24
+7 * 2
+C_idx: 24
+3 * 7
+C_idx: 24
+1 * 6
+C_idx: 24
+5 * 5
+C_idx: 24
+6 * 9
+C_idx: 24
+0 * 0
+C_idx: 24
+0 * 2
+C_idx: 24
+C_idx: 25
+6 * 2
+C_idx: 25
+2 * 8
+C_idx: 25
+4 * 4
+C_idx: 25
+8 * 4
+C_idx: 25
+8 * 5
+C_idx: 25
+7 * 3
+C_idx: 25
+3 * 1
+C_idx: 25
+1 * 4
+C_idx: 25
+5 * 8
+C_idx: 25
+6 * 5
+C_idx: 25
+0 * 8
+C_idx: 25
+0 * 3
+C_idx: 25
+C_idx: 26
+6 * 6
+C_idx: 26
+2 * 1
+C_idx: 26
+4 * 0
+C_idx: 26
+8 * 8
+C_idx: 26
+8 * 8
+C_idx: 26
+7 * 1
+C_idx: 26
+3 * 2
+C_idx: 26
+1 * 4
+C_idx: 26
+5 * 0
+C_idx: 26
+6 * 6
+C_idx: 26
+0 * 8
+C_idx: 26
+0 * 0
+C_idx: 26
+C_idx: 27
+6 * 9
+C_idx: 27
+2 * 8
+C_idx: 27
+4 * 8
+C_idx: 27
+8 * 2
+C_idx: 27
+8 * 3
+C_idx: 27
+7 * 0
+C_idx: 27
+3 * 5
+C_idx: 27
+1 * 5
+C_idx: 27
+5 * 9
+C_idx: 27
+6 * 7
+C_idx: 27
+0 * 4
+C_idx: 27
+0 * 4
+C_idx: 27
+C_idx: 28
+6 * 1
+C_idx: 28
+2 * 0
+C_idx: 28
+4 * 7
+C_idx: 28
+8 * 9
+C_idx: 28
+8 * 0
+C_idx: 28
+7 * 0
+C_idx: 28
+3 * 7
+C_idx: 28
+1 * 1
+C_idx: 28
+5 * 8
+C_idx: 28
+6 * 8
+C_idx: 28
+0 * 3
+C_idx: 28
+0 * 2
+C_idx: 28
+C_idx: 29
+6 * 6
+C_idx: 29
+2 * 0
+C_idx: 29
+4 * 5
+C_idx: 29
+8 * 5
+C_idx: 29
+8 * 3
+C_idx: 29
+7 * 8
+C_idx: 29
+3 * 0
+C_idx: 29
+1 * 8
+C_idx: 29
+5 * 1
+C_idx: 29
+6 * 5
+C_idx: 29
+0 * 3
+C_idx: 29
+0 * 3
+C_idx: 29
+C_idx: 30
+6 * 7
+C_idx: 30
+2 * 9
+C_idx: 30
+4 * 9
+C_idx: 30
+8 * 2
+C_idx: 30
+8 * 5
+C_idx: 30
+7 * 0
+C_idx: 30
+3 * 2
+C_idx: 30
+1 * 4
+C_idx: 30
+5 * 3
+C_idx: 30
+6 * 7
+C_idx: 30
+0 * 8
+C_idx: 30
+0 * 7
+C_idx: 30
+C_idx: 31
+6 * 7
+C_idx: 31
+2 * 1
+C_idx: 31
+4 * 5
+C_idx: 31
+8 * 8
+C_idx: 31
+8 * 4
+C_idx: 31
+7 * 4
+C_idx: 31
+3 * 5
+C_idx: 31
+1 * 3
+C_idx: 31
+5 * 8
+C_idx: 31
+6 * 6
+C_idx: 31
+0 * 9
+C_idx: 31
+0 * 2
+C_idx: 31
+C_idx: 32
+6 * 9
+C_idx: 32
+2 * 5
+C_idx: 32
+4 * 7
+C_idx: 32
+8 * 5
+C_idx: 32
+8 * 9
+C_idx: 32
+7 * 4
+C_idx: 32
+3 * 8
+C_idx: 32
+1 * 2
+C_idx: 32
+5 * 2
+C_idx: 32
+6 * 1
+C_idx: 32
+0 * 1
+C_idx: 32
+0 * 0
+C_idx: 32
+C_idx: 33
+6 * 3
+C_idx: 33
+2 * 2
+C_idx: 33
+4 * 5
+C_idx: 33
+8 * 4
+C_idx: 33
+8 * 5
+C_idx: 33
+7 * 0
+C_idx: 33
+3 * 3
+C_idx: 33
+1 * 5
+C_idx: 33
+5 * 7
+C_idx: 33
+6 * 1
+C_idx: 33
+0 * 1
+C_idx: 33
+0 * 3
+C_idx: 33
+C_idx: 34
+6 * 7
+C_idx: 34
+2 * 2
+C_idx: 34
+4 * 4
+C_idx: 34
+8 * 6
+C_idx: 34
+8 * 4
+C_idx: 34
+7 * 8
+C_idx: 34
+3 * 9
+C_idx: 34
+1 * 5
+C_idx: 34
+5 * 3
+C_idx: 34
+6 * 4
+C_idx: 34
+0 * 8
+C_idx: 34
+0 * 9
+C_idx: 34
+C_idx: 35
+6 * 8
+C_idx: 35
+2 * 9
+C_idx: 35
+4 * 0
+C_idx: 35
+8 * 7
+C_idx: 35
+8 * 6
+C_idx: 35
+7 * 3
+C_idx: 35
+3 * 8
+C_idx: 35
+1 * 4
+C_idx: 35
+5 * 1
+C_idx: 35
+6 * 2
+C_idx: 35
+0 * 2
+C_idx: 35
+0 * 1
+C_idx: 35
+C_idx: 36
+8 * 8
+C_idx: 36
+6 * 7
+C_idx: 36
+5 * 2
+C_idx: 36
+3 * 3
+C_idx: 36
+7 * 6
+C_idx: 36
+4 * 2
+C_idx: 36
+5 * 7
+C_idx: 36
+9 * 6
+C_idx: 36
+9 * 5
+C_idx: 36
+0 * 9
+C_idx: 36
+0 * 0
+C_idx: 36
+2 * 2
+C_idx: 36
+C_idx: 37
+8 * 2
+C_idx: 37
+6 * 8
+C_idx: 37
+5 * 4
+C_idx: 37
+3 * 4
+C_idx: 37
+7 * 5
+C_idx: 37
+4 * 3
+C_idx: 37
+5 * 1
+C_idx: 37
+9 * 4
+C_idx: 37
+9 * 8
+C_idx: 37
+0 * 5
+C_idx: 37
+0 * 8
+C_idx: 37
+2 * 3
+C_idx: 37
+C_idx: 38
+8 * 6
+C_idx: 38
+6 * 1
+C_idx: 38
+5 * 0
+C_idx: 38
+3 * 8
+C_idx: 38
+7 * 8
+C_idx: 38
+4 * 1
+C_idx: 38
+5 * 2
+C_idx: 38
+9 * 4
+C_idx: 38
+9 * 0
+C_idx: 38
+0 * 6
+C_idx: 38
+0 * 8
+C_idx: 38
+2 * 0
+C_idx: 38
+C_idx: 39
+8 * 9
+C_idx: 39
+6 * 8
+C_idx: 39
+5 * 8
+C_idx: 39
+3 * 2
+C_idx: 39
+7 * 3
+C_idx: 39
+4 * 0
+C_idx: 39
+5 * 5
+C_idx: 39
+9 * 5
+C_idx: 39
+9 * 9
+C_idx: 39
+0 * 7
+C_idx: 39
+0 * 4
+C_idx: 39
+2 * 4
+C_idx: 39
+C_idx: 40
+8 * 1
+C_idx: 40
+6 * 0
+C_idx: 40
+5 * 7
+C_idx: 40
+3 * 9
+C_idx: 40
+7 * 0
+C_idx: 40
+4 * 0
+C_idx: 40
+5 * 7
+C_idx: 40
+9 * 1
+C_idx: 40
+9 * 8
+C_idx: 40
+0 * 8
+C_idx: 40
+0 * 3
+C_idx: 40
+2 * 2
+C_idx: 40
+C_idx: 41
+8 * 6
+C_idx: 41
+6 * 0
+C_idx: 41
+5 * 5
+C_idx: 41
+3 * 5
+C_idx: 41
+7 * 3
+C_idx: 41
+4 * 8
+C_idx: 41
+5 * 0
+C_idx: 41
+9 * 8
+C_idx: 41
+9 * 1
+C_idx: 41
+0 * 5
+C_idx: 41
+0 * 3
+C_idx: 41
+2 * 3
+C_idx: 41
+C_idx: 42
+8 * 7
+C_idx: 42
+6 * 9
+C_idx: 42
+5 * 9
+C_idx: 42
+3 * 2
+C_idx: 42
+7 * 5
+C_idx: 42
+4 * 0
+C_idx: 42
+5 * 2
+C_idx: 42
+9 * 4
+C_idx: 42
+9 * 3
+C_idx: 42
+0 * 7
+C_idx: 42
+0 * 8
+C_idx: 42
+2 * 7
+C_idx: 42
+C_idx: 43
+8 * 7
+C_idx: 43
+6 * 1
+C_idx: 43
+5 * 5
+C_idx: 43
+3 * 8
+C_idx: 43
+7 * 4
+C_idx: 43
+4 * 4
+C_idx: 43
+5 * 5
+C_idx: 43
+9 * 3
+C_idx: 43
+9 * 8
+C_idx: 43
+0 * 6
+C_idx: 43
+0 * 9
+C_idx: 43
+2 * 2
+C_idx: 43
+C_idx: 44
+8 * 9
+C_idx: 44
+6 * 5
+C_idx: 44
+5 * 7
+C_idx: 44
+3 * 5
+C_idx: 44
+7 * 9
+C_idx: 44
+4 * 4
+C_idx: 44
+5 * 8
+C_idx: 44
+9 * 2
+C_idx: 44
+9 * 2
+C_idx: 44
+0 * 1
+C_idx: 44
+0 * 1
+C_idx: 44
+2 * 0
+C_idx: 44
+C_idx: 45
+8 * 3
+C_idx: 45
+6 * 2
+C_idx: 45
+5 * 5
+C_idx: 45
+3 * 4
+C_idx: 45
+7 * 5
+C_idx: 45
+4 * 0
+C_idx: 45
+5 * 3
+C_idx: 45
+9 * 5
+C_idx: 45
+9 * 7
+C_idx: 45
+0 * 1
+C_idx: 45
+0 * 1
+C_idx: 45
+2 * 3
+C_idx: 45
+C_idx: 46
+8 * 7
+C_idx: 46
+6 * 2
+C_idx: 46
+5 * 4
+C_idx: 46
+3 * 6
+C_idx: 46
+7 * 4
+C_idx: 46
+4 * 8
+C_idx: 46
+5 * 9
+C_idx: 46
+9 * 5
+C_idx: 46
+9 * 3
+C_idx: 46
+0 * 4
+C_idx: 46
+0 * 8
+C_idx: 46
+2 * 9
+C_idx: 46
+C_idx: 47
+8 * 8
+C_idx: 47
+6 * 9
+C_idx: 47
+5 * 0
+C_idx: 47
+3 * 7
+C_idx: 47
+7 * 6
+C_idx: 47
+4 * 3
+C_idx: 47
+5 * 8
+C_idx: 47
+9 * 4
+C_idx: 47
+9 * 1
+C_idx: 47
+0 * 2
+C_idx: 47
+0 * 2
+C_idx: 47
+2 * 1
+C_idx: 47
+C_idx: 48
+5 * 8
+C_idx: 48
+5 * 7
+C_idx: 48
+7 * 2
+C_idx: 48
+2 * 3
+C_idx: 48
+1 * 6
+C_idx: 48
+5 * 2
+C_idx: 48
+8 * 7
+C_idx: 48
+7 * 6
+C_idx: 48
+8 * 5
+C_idx: 48
+4 * 9
+C_idx: 48
+7 * 0
+C_idx: 48
+6 * 2
+C_idx: 48
+C_idx: 49
+5 * 2
+C_idx: 49
+5 * 8
+C_idx: 49
+7 * 4
+C_idx: 49
+2 * 4
+C_idx: 49
+1 * 5
+C_idx: 49
+5 * 3
+C_idx: 49
+8 * 1
+C_idx: 49
+7 * 4
+C_idx: 49
+8 * 8
+C_idx: 49
+4 * 5
+C_idx: 49
+7 * 8
+C_idx: 49
+6 * 3
+C_idx: 49
+C_idx: 50
+5 * 6
+C_idx: 50
+5 * 1
+C_idx: 50
+7 * 0
+C_idx: 50
+2 * 8
+C_idx: 50
+1 * 8
+C_idx: 50
+5 * 1
+C_idx: 50
+8 * 2
+C_idx: 50
+7 * 4
+C_idx: 50
+8 * 0
+C_idx: 50
+4 * 6
+C_idx: 50
+7 * 8
+C_idx: 50
+6 * 0
+C_idx: 50
+C_idx: 51
+5 * 9
+C_idx: 51
+5 * 8
+C_idx: 51
+7 * 8
+C_idx: 51
+2 * 2
+C_idx: 51
+1 * 3
+C_idx: 51
+5 * 0
+C_idx: 51
+8 * 5
+C_idx: 51
+7 * 5
+C_idx: 51
+8 * 9
+C_idx: 51
+4 * 7
+C_idx: 51
+7 * 4
+C_idx: 51
+6 * 4
+C_idx: 51
+C_idx: 52
+5 * 1
+C_idx: 52
+5 * 0
+C_idx: 52
+7 * 7
+C_idx: 52
+2 * 9
+C_idx: 52
+1 * 0
+C_idx: 52
+5 * 0
+C_idx: 52
+8 * 7
+C_idx: 52
+7 * 1
+C_idx: 52
+8 * 8
+C_idx: 52
+4 * 8
+C_idx: 52
+7 * 3
+C_idx: 52
+6 * 2
+C_idx: 52
+C_idx: 53
+5 * 6
+C_idx: 53
+5 * 0
+C_idx: 53
+7 * 5
+C_idx: 53
+2 * 5
+C_idx: 53
+1 * 3
+C_idx: 53
+5 * 8
+C_idx: 53
+8 * 0
+C_idx: 53
+7 * 8
+C_idx: 53
+8 * 1
+C_idx: 53
+4 * 5
+C_idx: 53
+7 * 3
+C_idx: 53
+6 * 3
+C_idx: 53
+C_idx: 54
+5 * 7
+C_idx: 54
+5 * 9
+C_idx: 54
+7 * 9
+C_idx: 54
+2 * 2
+C_idx: 54
+1 * 5
+C_idx: 54
+5 * 0
+C_idx: 54
+8 * 2
+C_idx: 54
+7 * 4
+C_idx: 54
+8 * 3
+C_idx: 54
+4 * 7
+C_idx: 54
+7 * 8
+C_idx: 54
+6 * 7
+C_idx: 54
+C_idx: 55
+5 * 7
+C_idx: 55
+5 * 1
+C_idx: 55
+7 * 5
+C_idx: 55
+2 * 8
+C_idx: 55
+1 * 4
+C_idx: 55
+5 * 4
+C_idx: 55
+8 * 5
+C_idx: 55
+7 * 3
+C_idx: 55
+8 * 8
+C_idx: 55
+4 * 6
+C_idx: 55
+7 * 9
+C_idx: 55
+6 * 2
+C_idx: 55
+C_idx: 56
+5 * 9
+C_idx: 56
+5 * 5
+C_idx: 56
+7 * 7
+C_idx: 56
+2 * 5
+C_idx: 56
+1 * 9
+C_idx: 56
+5 * 4
+C_idx: 56
+8 * 8
+C_idx: 56
+7 * 2
+C_idx: 56
+8 * 2
+C_idx: 56
+4 * 1
+C_idx: 56
+7 * 1
+C_idx: 56
+6 * 0
+C_idx: 56
+C_idx: 57
+5 * 3
+C_idx: 57
+5 * 2
+C_idx: 57
+7 * 5
+C_idx: 57
+2 * 4
+C_idx: 57
+1 * 5
+C_idx: 57
+5 * 0
+C_idx: 57
+8 * 3
+C_idx: 57
+7 * 5
+C_idx: 57
+8 * 7
+C_idx: 57
+4 * 1
+C_idx: 57
+7 * 1
+C_idx: 57
+6 * 3
+C_idx: 57
+C_idx: 58
+5 * 7
+C_idx: 58
+5 * 2
+C_idx: 58
+7 * 4
+C_idx: 58
+2 * 6
+C_idx: 58
+1 * 4
+C_idx: 58
+5 * 8
+C_idx: 58
+8 * 9
+C_idx: 58
+7 * 5
+C_idx: 58
+8 * 3
+C_idx: 58
+4 * 4
+C_idx: 58
+7 * 8
+C_idx: 58
+6 * 9
+C_idx: 58
+C_idx: 59
+5 * 8
+C_idx: 59
+5 * 9
+C_idx: 59
+7 * 0
+C_idx: 59
+2 * 7
+C_idx: 59
+1 * 6
+C_idx: 59
+5 * 3
+C_idx: 59
+8 * 8
+C_idx: 59
+7 * 4
+C_idx: 59
+8 * 1
+C_idx: 59
+4 * 2
+C_idx: 59
+7 * 2
+C_idx: 59
+6 * 1
+C_idx: 59
+C_idx: 60
+1 * 8
+C_idx: 60
+0 * 7
+C_idx: 60
+9 * 2
+C_idx: 60
+9 * 3
+C_idx: 60
+6 * 6
+C_idx: 60
+0 * 2
+C_idx: 60
+9 * 7
+C_idx: 60
+6 * 6
+C_idx: 60
+8 * 5
+C_idx: 60
+6 * 9
+C_idx: 60
+9 * 0
+C_idx: 60
+5 * 2
+C_idx: 60
+C_idx: 61
+1 * 2
+C_idx: 61
+0 * 8
+C_idx: 61
+9 * 4
+C_idx: 61
+9 * 4
+C_idx: 61
+6 * 5
+C_idx: 61
+0 * 3
+C_idx: 61
+9 * 1
+C_idx: 61
+6 * 4
+C_idx: 61
+8 * 8
+C_idx: 61
+6 * 5
+C_idx: 61
+9 * 8
+C_idx: 61
+5 * 3
+C_idx: 61
+C_idx: 62
+1 * 6
+C_idx: 62
+0 * 1
+C_idx: 62
+9 * 0
+C_idx: 62
+9 * 8
+C_idx: 62
+6 * 8
+C_idx: 62
+0 * 1
+C_idx: 62
+9 * 2
+C_idx: 62
+6 * 4
+C_idx: 62
+8 * 0
+C_idx: 62
+6 * 6
+C_idx: 62
+9 * 8
+C_idx: 62
+5 * 0
+C_idx: 62
+C_idx: 63
+1 * 9
+C_idx: 63
+0 * 8
+C_idx: 63
+9 * 8
+C_idx: 63
+9 * 2
+C_idx: 63
+6 * 3
+C_idx: 63
+0 * 0
+C_idx: 63
+9 * 5
+C_idx: 63
+6 * 5
+C_idx: 63
+8 * 9
+C_idx: 63
+6 * 7
+C_idx: 63
+9 * 4
+C_idx: 63
+5 * 4
+C_idx: 63
+C_idx: 64
+1 * 1
+C_idx: 64
+0 * 0
+C_idx: 64
+9 * 7
+C_idx: 64
+9 * 9
+C_idx: 64
+6 * 0
+C_idx: 64
+0 * 0
+C_idx: 64
+9 * 7
+C_idx: 64
+6 * 1
+C_idx: 64
+8 * 8
+C_idx: 64
+6 * 8
+C_idx: 64
+9 * 3
+C_idx: 64
+5 * 2
+C_idx: 64
+C_idx: 65
+1 * 6
+C_idx: 65
+0 * 0
+C_idx: 65
+9 * 5
+C_idx: 65
+9 * 5
+C_idx: 65
+6 * 3
+C_idx: 65
+0 * 8
+C_idx: 65
+9 * 0
+C_idx: 65
+6 * 8
+C_idx: 65
+8 * 1
+C_idx: 65
+6 * 5
+C_idx: 65
+9 * 3
+C_idx: 65
+5 * 3
+C_idx: 65
+C_idx: 66
+1 * 7
+C_idx: 66
+0 * 9
+C_idx: 66
+9 * 9
+C_idx: 66
+9 * 2
+C_idx: 66
+6 * 5
+C_idx: 66
+0 * 0
+C_idx: 66
+9 * 2
+C_idx: 66
+6 * 4
+C_idx: 66
+8 * 3
+C_idx: 66
+6 * 7
+C_idx: 66
+9 * 8
+C_idx: 66
+5 * 7
+C_idx: 66
+C_idx: 67
+1 * 7
+C_idx: 67
+0 * 1
+C_idx: 67
+9 * 5
+C_idx: 67
+9 * 8
+C_idx: 67
+6 * 4
+C_idx: 67
+0 * 4
+C_idx: 67
+9 * 5
+C_idx: 67
+6 * 3
+C_idx: 67
+8 * 8
+C_idx: 67
+6 * 6
+C_idx: 67
+9 * 9
+C_idx: 67
+5 * 2
+C_idx: 67
+C_idx: 68
+1 * 9
+C_idx: 68
+0 * 5
+C_idx: 68
+9 * 7
+C_idx: 68
+9 * 5
+C_idx: 68
+6 * 9
+C_idx: 68
+0 * 4
+C_idx: 68
+9 * 8
+C_idx: 68
+6 * 2
+C_idx: 68
+8 * 2
+C_idx: 68
+6 * 1
+C_idx: 68
+9 * 1
+C_idx: 68
+5 * 0
+C_idx: 68
+C_idx: 69
+1 * 3
+C_idx: 69
+0 * 2
+C_idx: 69
+9 * 5
+C_idx: 69
+9 * 4
+C_idx: 69
+6 * 5
+C_idx: 69
+0 * 0
+C_idx: 69
+9 * 3
+C_idx: 69
+6 * 5
+C_idx: 69
+8 * 7
+C_idx: 69
+6 * 1
+C_idx: 69
+9 * 1
+C_idx: 69
+5 * 3
+C_idx: 69
+C_idx: 70
+1 * 7
+C_idx: 70
+0 * 2
+C_idx: 70
+9 * 4
+C_idx: 70
+9 * 6
+C_idx: 70
+6 * 4
+C_idx: 70
+0 * 8
+C_idx: 70
+9 * 9
+C_idx: 70
+6 * 5
+C_idx: 70
+8 * 3
+C_idx: 70
+6 * 4
+C_idx: 70
+9 * 8
+C_idx: 70
+5 * 9
+C_idx: 70
+C_idx: 71
+1 * 8
+C_idx: 71
+0 * 9
+C_idx: 71
+9 * 0
+C_idx: 71
+9 * 7
+C_idx: 71
+6 * 6
+C_idx: 71
+0 * 3
+C_idx: 71
+9 * 8
+C_idx: 71
+6 * 4
+C_idx: 71
+8 * 1
+C_idx: 71
+6 * 2
+C_idx: 71
+9 * 2
+C_idx: 71
+5 * 1
+C_idx: 71
+C_idx: 72
+2 * 8
+C_idx: 72
+7 * 7
+C_idx: 72
+6 * 2
+C_idx: 72
+1 * 3
+C_idx: 72
+7 * 6
+C_idx: 72
+9 * 2
+C_idx: 72
+5 * 7
+C_idx: 72
+5 * 6
+C_idx: 72
+4 * 5
+C_idx: 72
+5 * 9
+C_idx: 72
+9 * 0
+C_idx: 72
+5 * 2
+C_idx: 72
+C_idx: 73
+2 * 2
+C_idx: 73
+7 * 8
+C_idx: 73
+6 * 4
+C_idx: 73
+1 * 4
+C_idx: 73
+7 * 5
+C_idx: 73
+9 * 3
+C_idx: 73
+5 * 1
+C_idx: 73
+5 * 4
+C_idx: 73
+4 * 8
+C_idx: 73
+5 * 5
+C_idx: 73
+9 * 8
+C_idx: 73
+5 * 3
+C_idx: 73
+C_idx: 74
+2 * 6
+C_idx: 74
+7 * 1
+C_idx: 74
+6 * 0
+C_idx: 74
+1 * 8
+C_idx: 74
+7 * 8
+C_idx: 74
+9 * 1
+C_idx: 74
+5 * 2
+C_idx: 74
+5 * 4
+C_idx: 74
+4 * 0
+C_idx: 74
+5 * 6
+C_idx: 74
+9 * 8
+C_idx: 74
+5 * 0
+C_idx: 74
+C_idx: 75
+2 * 9
+C_idx: 75
+7 * 8
+C_idx: 75
+6 * 8
+C_idx: 75
+1 * 2
+C_idx: 75
+7 * 3
+C_idx: 75
+9 * 0
+C_idx: 75
+5 * 5
+C_idx: 75
+5 * 5
+C_idx: 75
+4 * 9
+C_idx: 75
+5 * 7
+C_idx: 75
+9 * 4
+C_idx: 75
+5 * 4
+C_idx: 75
+C_idx: 76
+2 * 1
+C_idx: 76
+7 * 0
+C_idx: 76
+6 * 7
+C_idx: 76
+1 * 9
+C_idx: 76
+7 * 0
+C_idx: 76
+9 * 0
+C_idx: 76
+5 * 7
+C_idx: 76
+5 * 1
+C_idx: 76
+4 * 8
+C_idx: 76
+5 * 8
+C_idx: 76
+9 * 3
+C_idx: 76
+5 * 2
+C_idx: 76
+C_idx: 77
+2 * 6
+C_idx: 77
+7 * 0
+C_idx: 77
+6 * 5
+C_idx: 77
+1 * 5
+C_idx: 77
+7 * 3
+C_idx: 77
+9 * 8
+C_idx: 77
+5 * 0
+C_idx: 77
+5 * 8
+C_idx: 77
+4 * 1
+C_idx: 77
+5 * 5
+C_idx: 77
+9 * 3
+C_idx: 77
+5 * 3
+C_idx: 77
+C_idx: 78
+2 * 7
+C_idx: 78
+7 * 9
+C_idx: 78
+6 * 9
+C_idx: 78
+1 * 2
+C_idx: 78
+7 * 5
+C_idx: 78
+9 * 0
+C_idx: 78
+5 * 2
+C_idx: 78
+5 * 4
+C_idx: 78
+4 * 3
+C_idx: 78
+5 * 7
+C_idx: 78
+9 * 8
+C_idx: 78
+5 * 7
+C_idx: 78
+C_idx: 79
+2 * 7
+C_idx: 79
+7 * 1
+C_idx: 79
+6 * 5
+C_idx: 79
+1 * 8
+C_idx: 79
+7 * 4
+C_idx: 79
+9 * 4
+C_idx: 79
+5 * 5
+C_idx: 79
+5 * 3
+C_idx: 79
+4 * 8
+C_idx: 79
+5 * 6
+C_idx: 79
+9 * 9
+C_idx: 79
+5 * 2
+C_idx: 79
+C_idx: 80
+2 * 9
+C_idx: 80
+7 * 5
+C_idx: 80
+6 * 7
+C_idx: 80
+1 * 5
+C_idx: 80
+7 * 9
+C_idx: 80
+9 * 4
+C_idx: 80
+5 * 8
+C_idx: 80
+5 * 2
+C_idx: 80
+4 * 2
+C_idx: 80
+5 * 1
+C_idx: 80
+9 * 1
+C_idx: 80
+5 * 0
+C_idx: 80
+C_idx: 81
+2 * 3
+C_idx: 81
+7 * 2
+C_idx: 81
+6 * 5
+C_idx: 81
+1 * 4
+C_idx: 81
+7 * 5
+C_idx: 81
+9 * 0
+C_idx: 81
+5 * 3
+C_idx: 81
+5 * 5
+C_idx: 81
+4 * 7
+C_idx: 81
+5 * 1
+C_idx: 81
+9 * 1
+C_idx: 81
+5 * 3
+C_idx: 81
+C_idx: 82
+2 * 7
+C_idx: 82
+7 * 2
+C_idx: 82
+6 * 4
+C_idx: 82
+1 * 6
+C_idx: 82
+7 * 4
+C_idx: 82
+9 * 8
+C_idx: 82
+5 * 9
+C_idx: 82
+5 * 5
+C_idx: 82
+4 * 3
+C_idx: 82
+5 * 4
+C_idx: 82
+9 * 8
+C_idx: 82
+5 * 9
+C_idx: 82
+C_idx: 83
+2 * 8
+C_idx: 83
+7 * 9
+C_idx: 83
+6 * 0
+C_idx: 83
+1 * 7
+C_idx: 83
+7 * 6
+C_idx: 83
+9 * 3
+C_idx: 83
+5 * 8
+C_idx: 83
+5 * 4
+C_idx: 83
+4 * 1
+C_idx: 83
+5 * 2
+C_idx: 83
+9 * 2
+C_idx: 83
+5 * 1
+C_idx: 83
+C_idx: 84
+0 * 8
+C_idx: 84
+7 * 7
+C_idx: 84
+4 * 2
+C_idx: 84
+0 * 3
+C_idx: 84
+3 * 6
+C_idx: 84
+1 * 2
+C_idx: 84
+9 * 7
+C_idx: 84
+7 * 6
+C_idx: 84
+2 * 5
+C_idx: 84
+8 * 9
+C_idx: 84
+6 * 0
+C_idx: 84
+8 * 2
+C_idx: 84
+C_idx: 85
+0 * 2
+C_idx: 85
+7 * 8
+C_idx: 85
+4 * 4
+C_idx: 85
+0 * 4
+C_idx: 85
+3 * 5
+C_idx: 85
+1 * 3
+C_idx: 85
+9 * 1
+C_idx: 85
+7 * 4
+C_idx: 85
+2 * 8
+C_idx: 85
+8 * 5
+C_idx: 85
+6 * 8
+C_idx: 85
+8 * 3
+C_idx: 85
+C_idx: 86
+0 * 6
+C_idx: 86
+7 * 1
+C_idx: 86
+4 * 0
+C_idx: 86
+0 * 8
+C_idx: 86
+3 * 8
+C_idx: 86
+1 * 1
+C_idx: 86
+9 * 2
+C_idx: 86
+7 * 4
+C_idx: 86
+2 * 0
+C_idx: 86
+8 * 6
+C_idx: 86
+6 * 8
+C_idx: 86
+8 * 0
+C_idx: 86
+C_idx: 87
+0 * 9
+C_idx: 87
+7 * 8
+C_idx: 87
+4 * 8
+C_idx: 87
+0 * 2
+C_idx: 87
+3 * 3
+C_idx: 87
+1 * 0
+C_idx: 87
+9 * 5
+C_idx: 87
+7 * 5
+C_idx: 87
+2 * 9
+C_idx: 87
+8 * 7
+C_idx: 87
+6 * 4
+C_idx: 87
+8 * 4
+C_idx: 87
+C_idx: 88
+0 * 1
+C_idx: 88
+7 * 0
+C_idx: 88
+4 * 7
+C_idx: 88
+0 * 9
+C_idx: 88
+3 * 0
+C_idx: 88
+1 * 0
+C_idx: 88
+9 * 7
+C_idx: 88
+7 * 1
+C_idx: 88
+2 * 8
+C_idx: 88
+8 * 8
+C_idx: 88
+6 * 3
+C_idx: 88
+8 * 2
+C_idx: 88
+C_idx: 89
+0 * 6
+C_idx: 89
+7 * 0
+C_idx: 89
+4 * 5
+C_idx: 89
+0 * 5
+C_idx: 89
+3 * 3
+C_idx: 89
+1 * 8
+C_idx: 89
+9 * 0
+C_idx: 89
+7 * 8
+C_idx: 89
+2 * 1
+C_idx: 89
+8 * 5
+C_idx: 89
+6 * 3
+C_idx: 89
+8 * 3
+C_idx: 89
+C_idx: 90
+0 * 7
+C_idx: 90
+7 * 9
+C_idx: 90
+4 * 9
+C_idx: 90
+0 * 2
+C_idx: 90
+3 * 5
+C_idx: 90
+1 * 0
+C_idx: 90
+9 * 2
+C_idx: 90
+7 * 4
+C_idx: 90
+2 * 3
+C_idx: 90
+8 * 7
+C_idx: 90
+6 * 8
+C_idx: 90
+8 * 7
+C_idx: 90
+C_idx: 91
+0 * 7
+C_idx: 91
+7 * 1
+C_idx: 91
+4 * 5
+C_idx: 91
+0 * 8
+C_idx: 91
+3 * 4
+C_idx: 91
+1 * 4
+C_idx: 91
+9 * 5
+C_idx: 91
+7 * 3
+C_idx: 91
+2 * 8
+C_idx: 91
+8 * 6
+C_idx: 91
+6 * 9
+C_idx: 91
+8 * 2
+C_idx: 91
+C_idx: 92
+0 * 9
+C_idx: 92
+7 * 5
+C_idx: 92
+4 * 7
+C_idx: 92
+0 * 5
+C_idx: 92
+3 * 9
+C_idx: 92
+1 * 4
+C_idx: 92
+9 * 8
+C_idx: 92
+7 * 2
+C_idx: 92
+2 * 2
+C_idx: 92
+8 * 1
+C_idx: 92
+6 * 1
+C_idx: 92
+8 * 0
+C_idx: 92
+C_idx: 93
+0 * 3
+C_idx: 93
+7 * 2
+C_idx: 93
+4 * 5
+C_idx: 93
+0 * 4
+C_idx: 93
+3 * 5
+C_idx: 93
+1 * 0
+C_idx: 93
+9 * 3
+C_idx: 93
+7 * 5
+C_idx: 93
+2 * 7
+C_idx: 93
+8 * 1
+C_idx: 93
+6 * 1
+C_idx: 93
+8 * 3
+C_idx: 93
+C_idx: 94
+0 * 7
+C_idx: 94
+7 * 2
+C_idx: 94
+4 * 4
+C_idx: 94
+0 * 6
+C_idx: 94
+3 * 4
+C_idx: 94
+1 * 8
+C_idx: 94
+9 * 9
+C_idx: 94
+7 * 5
+C_idx: 94
+2 * 3
+C_idx: 94
+8 * 4
+C_idx: 94
+6 * 8
+C_idx: 94
+8 * 9
+C_idx: 94
+C_idx: 95
+0 * 8
+C_idx: 95
+7 * 9
+C_idx: 95
+4 * 0
+C_idx: 95
+0 * 7
+C_idx: 95
+3 * 6
+C_idx: 95
+1 * 3
+C_idx: 95
+9 * 8
+C_idx: 95
+7 * 4
+C_idx: 95
+2 * 1
+C_idx: 95
+8 * 2
+C_idx: 95
+6 * 2
+C_idx: 95
+8 * 1
+C_idx: 95
+C_idx: 96
+0 * 8
+C_idx: 96
+7 * 7
+C_idx: 96
+7 * 2
+C_idx: 96
+9 * 3
+C_idx: 96
+3 * 6
+C_idx: 96
+6 * 2
+C_idx: 96
+6 * 7
+C_idx: 96
+7 * 6
+C_idx: 96
+5 * 5
+C_idx: 96
+3 * 9
+C_idx: 96
+0 * 0
+C_idx: 96
+3 * 2
+C_idx: 96
+C_idx: 97
+0 * 2
+C_idx: 97
+7 * 8
+C_idx: 97
+7 * 4
+C_idx: 97
+9 * 4
+C_idx: 97
+3 * 5
+C_idx: 97
+6 * 3
+C_idx: 97
+6 * 1
+C_idx: 97
+7 * 4
+C_idx: 97
+5 * 8
+C_idx: 97
+3 * 5
+C_idx: 97
+0 * 8
+C_idx: 97
+3 * 3
+C_idx: 97
+C_idx: 98
+0 * 6
+C_idx: 98
+7 * 1
+C_idx: 98
+7 * 0
+C_idx: 98
+9 * 8
+C_idx: 98
+3 * 8
+C_idx: 98
+6 * 1
+C_idx: 98
+6 * 2
+C_idx: 98
+7 * 4
+C_idx: 98
+5 * 0
+C_idx: 98
+3 * 6
+C_idx: 98
+0 * 8
+C_idx: 98
+3 * 0
+C_idx: 98
+C_idx: 99
+0 * 9
+C_idx: 99
+7 * 8
+C_idx: 99
+7 * 8
+C_idx: 99
+9 * 2
+C_idx: 99
+3 * 3
+C_idx: 99
+6 * 0
+C_idx: 99
+6 * 5
+C_idx: 99
+7 * 5
+C_idx: 99
+5 * 9
+C_idx: 99
+3 * 7
+C_idx: 99
+0 * 4
+C_idx: 99
+3 * 4
+C_idx: 99
+C_idx: 100
+0 * 1
+C_idx: 100
+7 * 0
+C_idx: 100
+7 * 7
+C_idx: 100
+9 * 9
+C_idx: 100
+3 * 0
+C_idx: 100
+6 * 0
+C_idx: 100
+6 * 7
+C_idx: 100
+7 * 1
+C_idx: 100
+5 * 8
+C_idx: 100
+3 * 8
+C_idx: 100
+0 * 3
+C_idx: 100
+3 * 2
+C_idx: 100
+C_idx: 101
+0 * 6
+C_idx: 101
+7 * 0
+C_idx: 101
+7 * 5
+C_idx: 101
+9 * 5
+C_idx: 101
+3 * 3
+C_idx: 101
+6 * 8
+C_idx: 101
+6 * 0
+C_idx: 101
+7 * 8
+C_idx: 101
+5 * 1
+C_idx: 101
+3 * 5
+C_idx: 101
+0 * 3
+C_idx: 101
+3 * 3
+C_idx: 101
+C_idx: 102
+0 * 7
+C_idx: 102
+7 * 9
+C_idx: 102
+7 * 9
+C_idx: 102
+9 * 2
+C_idx: 102
+3 * 5
+C_idx: 102
+6 * 0
+C_idx: 102
+6 * 2
+C_idx: 102
+7 * 4
+C_idx: 102
+5 * 3
+C_idx: 102
+3 * 7
+C_idx: 102
+0 * 8
+C_idx: 102
+3 * 7
+C_idx: 102
+C_idx: 103
+0 * 7
+C_idx: 103
+7 * 1
+C_idx: 103
+7 * 5
+C_idx: 103
+9 * 8
+C_idx: 103
+3 * 4
+C_idx: 103
+6 * 4
+C_idx: 103
+6 * 5
+C_idx: 103
+7 * 3
+C_idx: 103
+5 * 8
+C_idx: 103
+3 * 6
+C_idx: 103
+0 * 9
+C_idx: 103
+3 * 2
+C_idx: 103
+C_idx: 104
+0 * 9
+C_idx: 104
+7 * 5
+C_idx: 104
+7 * 7
+C_idx: 104
+9 * 5
+C_idx: 104
+3 * 9
+C_idx: 104
+6 * 4
+C_idx: 104
+6 * 8
+C_idx: 104
+7 * 2
+C_idx: 104
+5 * 2
+C_idx: 104
+3 * 1
+C_idx: 104
+0 * 1
+C_idx: 104
+3 * 0
+C_idx: 104
+C_idx: 105
+0 * 3
+C_idx: 105
+7 * 2
+C_idx: 105
+7 * 5
+C_idx: 105
+9 * 4
+C_idx: 105
+3 * 5
+C_idx: 105
+6 * 0
+C_idx: 105
+6 * 3
+C_idx: 105
+7 * 5
+C_idx: 105
+5 * 7
+C_idx: 105
+3 * 1
+C_idx: 105
+0 * 1
+C_idx: 105
+3 * 3
+C_idx: 105
+C_idx: 106
+0 * 7
+C_idx: 106
+7 * 2
+C_idx: 106
+7 * 4
+C_idx: 106
+9 * 6
+C_idx: 106
+3 * 4
+C_idx: 106
+6 * 8
+C_idx: 106
+6 * 9
+C_idx: 106
+7 * 5
+C_idx: 106
+5 * 3
+C_idx: 106
+3 * 4
+C_idx: 106
+0 * 8
+C_idx: 106
+3 * 9
+C_idx: 106
+C_idx: 107
+0 * 8
+C_idx: 107
+7 * 9
+C_idx: 107
+7 * 0
+C_idx: 107
+9 * 7
+C_idx: 107
+3 * 6
+C_idx: 107
+6 * 3
+C_idx: 107
+6 * 8
+C_idx: 107
+7 * 4
+C_idx: 107
+5 * 1
+C_idx: 107
+3 * 2
+C_idx: 107
+0 * 2
+C_idx: 107
+3 * 1
+C_idx: 107
+C_idx: 108
+2 * 8
+C_idx: 108
+5 * 7
+C_idx: 108
+0 * 2
+C_idx: 108
+8 * 3
+C_idx: 108
+2 * 6
+C_idx: 108
+9 * 2
+C_idx: 108
+5 * 7
+C_idx: 108
+3 * 6
+C_idx: 108
+9 * 5
+C_idx: 108
+9 * 9
+C_idx: 108
+5 * 0
+C_idx: 108
+4 * 2
+C_idx: 108
+C_idx: 109
+2 * 2
+C_idx: 109
+5 * 8
+C_idx: 109
+0 * 4
+C_idx: 109
+8 * 4
+C_idx: 109
+2 * 5
+C_idx: 109
+9 * 3
+C_idx: 109
+5 * 1
+C_idx: 109
+3 * 4
+C_idx: 109
+9 * 8
+C_idx: 109
+9 * 5
+C_idx: 109
+5 * 8
+C_idx: 109
+4 * 3
+C_idx: 109
+C_idx: 110
+2 * 6
+C_idx: 110
+5 * 1
+C_idx: 110
+0 * 0
+C_idx: 110
+8 * 8
+C_idx: 110
+2 * 8
+C_idx: 110
+9 * 1
+C_idx: 110
+5 * 2
+C_idx: 110
+3 * 4
+C_idx: 110
+9 * 0
+C_idx: 110
+9 * 6
+C_idx: 110
+5 * 8
+C_idx: 110
+4 * 0
+C_idx: 110
+C_idx: 111
+2 * 9
+C_idx: 111
+5 * 8
+C_idx: 111
+0 * 8
+C_idx: 111
+8 * 2
+C_idx: 111
+2 * 3
+C_idx: 111
+9 * 0
+C_idx: 111
+5 * 5
+C_idx: 111
+3 * 5
+C_idx: 111
+9 * 9
+C_idx: 111
+9 * 7
+C_idx: 111
+5 * 4
+C_idx: 111
+4 * 4
+C_idx: 111
+C_idx: 112
+2 * 1
+C_idx: 112
+5 * 0
+C_idx: 112
+0 * 7
+C_idx: 112
+8 * 9
+C_idx: 112
+2 * 0
+C_idx: 112
+9 * 0
+C_idx: 112
+5 * 7
+C_idx: 112
+3 * 1
+C_idx: 112
+9 * 8
+C_idx: 112
+9 * 8
+C_idx: 112
+5 * 3
+C_idx: 112
+4 * 2
+C_idx: 112
+C_idx: 113
+2 * 6
+C_idx: 113
+5 * 0
+C_idx: 113
+0 * 5
+C_idx: 113
+8 * 5
+C_idx: 113
+2 * 3
+C_idx: 113
+9 * 8
+C_idx: 113
+5 * 0
+C_idx: 113
+3 * 8
+C_idx: 113
+9 * 1
+C_idx: 113
+9 * 5
+C_idx: 113
+5 * 3
+C_idx: 113
+4 * 3
+C_idx: 113
+C_idx: 114
+2 * 7
+C_idx: 114
+5 * 9
+C_idx: 114
+0 * 9
+C_idx: 114
+8 * 2
+C_idx: 114
+2 * 5
+C_idx: 114
+9 * 0
+C_idx: 114
+5 * 2
+C_idx: 114
+3 * 4
+C_idx: 114
+9 * 3
+C_idx: 114
+9 * 7
+C_idx: 114
+5 * 8
+C_idx: 114
+4 * 7
+C_idx: 114
+C_idx: 115
+2 * 7
+C_idx: 115
+5 * 1
+C_idx: 115
+0 * 5
+C_idx: 115
+8 * 8
+C_idx: 115
+2 * 4
+C_idx: 115
+9 * 4
+C_idx: 115
+5 * 5
+C_idx: 115
+3 * 3
+C_idx: 115
+9 * 8
+C_idx: 115
+9 * 6
+C_idx: 115
+5 * 9
+C_idx: 115
+4 * 2
+C_idx: 115
+C_idx: 116
+2 * 9
+C_idx: 116
+5 * 5
+C_idx: 116
+0 * 7
+C_idx: 116
+8 * 5
+C_idx: 116
+2 * 9
+C_idx: 116
+9 * 4
+C_idx: 116
+5 * 8
+C_idx: 116
+3 * 2
+C_idx: 116
+9 * 2
+C_idx: 116
+9 * 1
+C_idx: 116
+5 * 1
+C_idx: 116
+4 * 0
+C_idx: 116
+C_idx: 117
+2 * 3
+C_idx: 117
+5 * 2
+C_idx: 117
+0 * 5
+C_idx: 117
+8 * 4
+C_idx: 117
+2 * 5
+C_idx: 117
+9 * 0
+C_idx: 117
+5 * 3
+C_idx: 117
+3 * 5
+C_idx: 117
+9 * 7
+C_idx: 117
+9 * 1
+C_idx: 117
+5 * 1
+C_idx: 117
+4 * 3
+C_idx: 117
+C_idx: 118
+2 * 7
+C_idx: 118
+5 * 2
+C_idx: 118
+0 * 4
+C_idx: 118
+8 * 6
+C_idx: 118
+2 * 4
+C_idx: 118
+9 * 8
+C_idx: 118
+5 * 9
+C_idx: 118
+3 * 5
+C_idx: 118
+9 * 3
+C_idx: 118
+9 * 4
+C_idx: 118
+5 * 8
+C_idx: 118
+4 * 9
+C_idx: 118
+C_idx: 119
+2 * 8
+C_idx: 119
+5 * 9
+C_idx: 119
+0 * 0
+C_idx: 119
+8 * 7
+C_idx: 119
+2 * 6
+C_idx: 119
+9 * 3
+C_idx: 119
+5 * 8
+C_idx: 119
+3 * 4
+C_idx: 119
+9 * 1
+C_idx: 119
+9 * 2
+C_idx: 119
+5 * 2
+C_idx: 119
+4 * 1
+C_idx: 119
+C_idx: 120
+0 * 8
+C_idx: 120
+4 * 7
+C_idx: 120
+1 * 2
+C_idx: 120
+2 * 3
+C_idx: 120
+5 * 6
+C_idx: 120
+7 * 2
+C_idx: 120
+3 * 7
+C_idx: 120
+5 * 6
+C_idx: 120
+4 * 5
+C_idx: 120
+2 * 9
+C_idx: 120
+6 * 0
+C_idx: 120
+9 * 2
+C_idx: 120
+C_idx: 121
+0 * 2
+C_idx: 121
+4 * 8
+C_idx: 121
+1 * 4
+C_idx: 121
+2 * 4
+C_idx: 121
+5 * 5
+C_idx: 121
+7 * 3
+C_idx: 121
+3 * 1
+C_idx: 121
+5 * 4
+C_idx: 121
+4 * 8
+C_idx: 121
+2 * 5
+C_idx: 121
+6 * 8
+C_idx: 121
+9 * 3
+C_idx: 121
+C_idx: 122
+0 * 6
+C_idx: 122
+4 * 1
+C_idx: 122
+1 * 0
+C_idx: 122
+2 * 8
+C_idx: 122
+5 * 8
+C_idx: 122
+7 * 1
+C_idx: 122
+3 * 2
+C_idx: 122
+5 * 4
+C_idx: 122
+4 * 0
+C_idx: 122
+2 * 6
+C_idx: 122
+6 * 8
+C_idx: 122
+9 * 0
+C_idx: 122
+C_idx: 123
+0 * 9
+C_idx: 123
+4 * 8
+C_idx: 123
+1 * 8
+C_idx: 123
+2 * 2
+C_idx: 123
+5 * 3
+C_idx: 123
+7 * 0
+C_idx: 123
+3 * 5
+C_idx: 123
+5 * 5
+C_idx: 123
+4 * 9
+C_idx: 123
+2 * 7
+C_idx: 123
+6 * 4
+C_idx: 123
+9 * 4
+C_idx: 123
+C_idx: 124
+0 * 1
+C_idx: 124
+4 * 0
+C_idx: 124
+1 * 7
+C_idx: 124
+2 * 9
+C_idx: 124
+5 * 0
+C_idx: 124
+7 * 0
+C_idx: 124
+3 * 7
+C_idx: 124
+5 * 1
+C_idx: 124
+4 * 8
+C_idx: 124
+2 * 8
+C_idx: 124
+6 * 3
+C_idx: 124
+9 * 2
+C_idx: 124
+C_idx: 125
+0 * 6
+C_idx: 125
+4 * 0
+C_idx: 125
+1 * 5
+C_idx: 125
+2 * 5
+C_idx: 125
+5 * 3
+C_idx: 125
+7 * 8
+C_idx: 125
+3 * 0
+C_idx: 125
+5 * 8
+C_idx: 125
+4 * 1
+C_idx: 125
+2 * 5
+C_idx: 125
+6 * 3
+C_idx: 125
+9 * 3
+C_idx: 125
+C_idx: 126
+0 * 7
+C_idx: 126
+4 * 9
+C_idx: 126
+1 * 9
+C_idx: 126
+2 * 2
+C_idx: 126
+5 * 5
+C_idx: 126
+7 * 0
+C_idx: 126
+3 * 2
+C_idx: 126
+5 * 4
+C_idx: 126
+4 * 3
+C_idx: 126
+2 * 7
+C_idx: 126
+6 * 8
+C_idx: 126
+9 * 7
+C_idx: 126
+C_idx: 127
+0 * 7
+C_idx: 127
+4 * 1
+C_idx: 127
+1 * 5
+C_idx: 127
+2 * 8
+C_idx: 127
+5 * 4
+C_idx: 127
+7 * 4
+C_idx: 127
+3 * 5
+C_idx: 127
+5 * 3
+C_idx: 127
+4 * 8
+C_idx: 127
+2 * 6
+C_idx: 127
+6 * 9
+C_idx: 127
+9 * 2
+C_idx: 127
+C_idx: 128
+0 * 9
+C_idx: 128
+4 * 5
+C_idx: 128
+1 * 7
+C_idx: 128
+2 * 5
+C_idx: 128
+5 * 9
+C_idx: 128
+7 * 4
+C_idx: 128
+3 * 8
+C_idx: 128
+5 * 2
+C_idx: 128
+4 * 2
+C_idx: 128
+2 * 1
+C_idx: 128
+6 * 1
+C_idx: 128
+9 * 0
+C_idx: 128
+C_idx: 129
+0 * 3
+C_idx: 129
+4 * 2
+C_idx: 129
+1 * 5
+C_idx: 129
+2 * 4
+C_idx: 129
+5 * 5
+C_idx: 129
+7 * 0
+C_idx: 129
+3 * 3
+C_idx: 129
+5 * 5
+C_idx: 129
+4 * 7
+C_idx: 129
+2 * 1
+C_idx: 129
+6 * 1
+C_idx: 129
+9 * 3
+C_idx: 129
+C_idx: 130
+0 * 7
+C_idx: 130
+4 * 2
+C_idx: 130
+1 * 4
+C_idx: 130
+2 * 6
+C_idx: 130
+5 * 4
+C_idx: 130
+7 * 8
+C_idx: 130
+3 * 9
+C_idx: 130
+5 * 5
+C_idx: 130
+4 * 3
+C_idx: 130
+2 * 4
+C_idx: 130
+6 * 8
+C_idx: 130
+9 * 9
+C_idx: 130
+C_idx: 131
+0 * 8
+C_idx: 131
+4 * 9
+C_idx: 131
+1 * 0
+C_idx: 131
+2 * 7
+C_idx: 131
+5 * 6
+C_idx: 131
+7 * 3
+C_idx: 131
+3 * 8
+C_idx: 131
+5 * 4
+C_idx: 131
+4 * 1
+C_idx: 131
+2 * 2
+C_idx: 131
+6 * 2
+C_idx: 131
+9 * 1
+C_idx: 131
+C_idx: 132
+0 * 8
+C_idx: 132
+5 * 7
+C_idx: 132
+6 * 2
+C_idx: 132
+6 * 3
+C_idx: 132
+0 * 6
+C_idx: 132
+8 * 2
+C_idx: 132
+1 * 7
+C_idx: 132
+4 * 6
+C_idx: 132
+6 * 5
+C_idx: 132
+1 * 9
+C_idx: 132
+2 * 0
+C_idx: 132
+8 * 2
+C_idx: 132
+C_idx: 133
+0 * 2
+C_idx: 133
+5 * 8
+C_idx: 133
+6 * 4
+C_idx: 133
+6 * 4
+C_idx: 133
+0 * 5
+C_idx: 133
+8 * 3
+C_idx: 133
+1 * 1
+C_idx: 133
+4 * 4
+C_idx: 133
+6 * 8
+C_idx: 133
+1 * 5
+C_idx: 133
+2 * 8
+C_idx: 133
+8 * 3
+C_idx: 133
+C_idx: 134
+0 * 6
+C_idx: 134
+5 * 1
+C_idx: 134
+6 * 0
+C_idx: 134
+6 * 8
+C_idx: 134
+0 * 8
+C_idx: 134
+8 * 1
+C_idx: 134
+1 * 2
+C_idx: 134
+4 * 4
+C_idx: 134
+6 * 0
+C_idx: 134
+1 * 6
+C_idx: 134
+2 * 8
+C_idx: 134
+8 * 0
+C_idx: 134
+C_idx: 135
+0 * 9
+C_idx: 135
+5 * 8
+C_idx: 135
+6 * 8
+C_idx: 135
+6 * 2
+C_idx: 135
+0 * 3
+C_idx: 135
+8 * 0
+C_idx: 135
+1 * 5
+C_idx: 135
+4 * 5
+C_idx: 135
+6 * 9
+C_idx: 135
+1 * 7
+C_idx: 135
+2 * 4
+C_idx: 135
+8 * 4
+C_idx: 135
+C_idx: 136
+0 * 1
+C_idx: 136
+5 * 0
+C_idx: 136
+6 * 7
+C_idx: 136
+6 * 9
+C_idx: 136
+0 * 0
+C_idx: 136
+8 * 0
+C_idx: 136
+1 * 7
+C_idx: 136
+4 * 1
+C_idx: 136
+6 * 8
+C_idx: 136
+1 * 8
+C_idx: 136
+2 * 3
+C_idx: 136
+8 * 2
+C_idx: 136
+C_idx: 137
+0 * 6
+C_idx: 137
+5 * 0
+C_idx: 137
+6 * 5
+C_idx: 137
+6 * 5
+C_idx: 137
+0 * 3
+C_idx: 137
+8 * 8
+C_idx: 137
+1 * 0
+C_idx: 137
+4 * 8
+C_idx: 137
+6 * 1
+C_idx: 137
+1 * 5
+C_idx: 137
+2 * 3
+C_idx: 137
+8 * 3
+C_idx: 137
+C_idx: 138
+0 * 7
+C_idx: 138
+5 * 9
+C_idx: 138
+6 * 9
+C_idx: 138
+6 * 2
+C_idx: 138
+0 * 5
+C_idx: 138
+8 * 0
+C_idx: 138
+1 * 2
+C_idx: 138
+4 * 4
+C_idx: 138
+6 * 3
+C_idx: 138
+1 * 7
+C_idx: 138
+2 * 8
+C_idx: 138
+8 * 7
+C_idx: 138
+C_idx: 139
+0 * 7
+C_idx: 139
+5 * 1
+C_idx: 139
+6 * 5
+C_idx: 139
+6 * 8
+C_idx: 139
+0 * 4
+C_idx: 139
+8 * 4
+C_idx: 139
+1 * 5
+C_idx: 139
+4 * 3
+C_idx: 139
+6 * 8
+C_idx: 139
+1 * 6
+C_idx: 139
+2 * 9
+C_idx: 139
+8 * 2
+C_idx: 139
+C_idx: 140
+0 * 9
+C_idx: 140
+5 * 5
+C_idx: 140
+6 * 7
+C_idx: 140
+6 * 5
+C_idx: 140
+0 * 9
+C_idx: 140
+8 * 4
+C_idx: 140
+1 * 8
+C_idx: 140
+4 * 2
+C_idx: 140
+6 * 2
+C_idx: 140
+1 * 1
+C_idx: 140
+2 * 1
+C_idx: 140
+8 * 0
+C_idx: 140
+C_idx: 141
+0 * 3
+C_idx: 141
+5 * 2
+C_idx: 141
+6 * 5
+C_idx: 141
+6 * 4
+C_idx: 141
+0 * 5
+C_idx: 141
+8 * 0
+C_idx: 141
+1 * 3
+C_idx: 141
+4 * 5
+C_idx: 141
+6 * 7
+C_idx: 141
+1 * 1
+C_idx: 141
+2 * 1
+C_idx: 141
+8 * 3
+C_idx: 141
+C_idx: 142
+0 * 7
+C_idx: 142
+5 * 2
+C_idx: 142
+6 * 4
+C_idx: 142
+6 * 6
+C_idx: 142
+0 * 4
+C_idx: 142
+8 * 8
+C_idx: 142
+1 * 9
+C_idx: 142
+4 * 5
+C_idx: 142
+6 * 3
+C_idx: 142
+1 * 4
+C_idx: 142
+2 * 8
+C_idx: 142
+8 * 9
+C_idx: 142
+C_idx: 143
+0 * 8
+C_idx: 143
+5 * 9
+C_idx: 143
+6 * 0
+C_idx: 143
+6 * 7
+C_idx: 143
+0 * 6
+C_idx: 143
+8 * 3
+C_idx: 143
+1 * 8
+C_idx: 143
+4 * 4
+C_idx: 143
+6 * 1
+C_idx: 143
+1 * 2
+C_idx: 143
+2 * 2
+C_idx: 143
+8 * 1
+C_idx: 143
