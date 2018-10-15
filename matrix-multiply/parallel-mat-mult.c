@@ -3,8 +3,18 @@
 #include <unistd.h>
 #include <mpi.h>
 #include <string.h>
+#include <time.h>
 
 #include "mat-io.h"
+
+#define ONE_BILLION (double)1000000000.0
+
+double
+now(void)
+{
+  struct timespec current_time;
+  clock_gettime(CLOCK_REALTIME, &current_time); return current_time.tv_sec + (current_time.tv_nsec / ONE_BILLION);
+}
 
 void usage(char *prog_name) {
     fprintf(stderr, "%s: -a <filename> -b <filename> -o <filename> [-h]\n", prog_name);
@@ -66,7 +76,6 @@ int calc_next_c_idx(int big_i, int tid, int num_threads, int m, int n, int p) {
 }
 
 void compute_section(int *c, int big_i, int tid, int num_threads, int *a, int *b, int m, int n, int p) {
-    int num_rows = m / num_threads;
     int x, y, c_idx;
     c_idx = calc_next_c_idx(big_i, tid, num_threads, m, n, p);
     for(int i = 0; i < m/num_threads; i++) {
@@ -75,22 +84,15 @@ void compute_section(int *c, int big_i, int tid, int num_threads, int *a, int *b
             for(int k = 0; k < p; k++) {
                 x = a[(i * n) + k];
                 y = b[(j * p) + k];
-                if(tid == 1) {
-                    printf("C_idx: %d\n%d * %d\n", c_idx, x, y);
                 }
                 c[c_idx] += x * y;
             }
-        if(tid == 1)
-            printf("C_idx: %d\n", c_idx);
         c_idx++;
-        }
-    }
-    if(tid == 1) {
-        printf("\n");
     }
 }
 
 int main(int argc, char ** argv) {
+    int start = now();
     MPI_Init(&argc, &argv);
 
     char *prog_name = argv[0];
@@ -132,6 +134,7 @@ int main(int argc, char ** argv) {
     int m = mnp[0];
     int n = mnp[1];
     int p = mnp[2];
+    free(mnp);
 
     int portion_of_a = ((m / num_threads) * n) + (m * n * (m % num_threads));
     int portion_of_b = ((p / (num_threads)) * n) + (n * p * (p % num_threads));
@@ -182,8 +185,13 @@ int main(int argc, char ** argv) {
         }
         memcpy(c, c_part, (sizeof(int) * portion_of_c));
         write_matrix(c, o_file, n, p);
+        free(c);
     }
+    free(a_part);
+    free(b_part);
+    free(c_part);
 
     MPI_Finalize();
+    printf("took: %f seconds\n", now() - start);
 }
 
