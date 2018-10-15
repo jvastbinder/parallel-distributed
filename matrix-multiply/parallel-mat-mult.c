@@ -42,9 +42,17 @@ void distribute_matrices(int num_threads, char *a_file, char *b_file, int m, int
             MPI_Send((void *)a_part, portion_of_a, MPI_INT, num_threads - 1 - i, 1, MPI_COMM_WORLD);
     }
 
+    int tmp, k_start, k_bound, b_part_idx;
     for(int i = 0; i < num_threads; i++) {
-        for(int j = i * ((n * p) / num_threads); j < ((n * p) / num_threads) + (((n * p) / num_threads) * i); j++) {
-            b_part[j % ((n * p) / num_threads)] = b[j];
+        tmp = 0;
+        for(int j = 0; j < n; j++) {
+            k_start = (i * (p / num_threads));
+            k_bound = (i * (p / num_threads)) + (p / num_threads);
+            for(int k = k_start; k < k_bound; k++) {
+                b_part_idx = ((k - k_start) * p) + j;
+                b_part[b_part_idx] = b[(j * p) + k];
+                tmp++;
+            }
         }
         if(i < num_threads - 1)
             MPI_Send((void *)b_part, portion_of_b, MPI_INT, num_threads - 1 - i, 1, MPI_COMM_WORLD);
@@ -53,15 +61,16 @@ void distribute_matrices(int num_threads, char *a_file, char *b_file, int m, int
 
 void compute_section(int *c, int big_i, int tid, int num_threads, int *a, int *b, int m, int n, int p) {
     int num_rows = m / num_threads;
-    int x, y, c_offset;
+    int x, y, c_idx;
+    c_idx = big_i * ((m * p) / num_threads);
     for(int i = 0; i < m/num_threads; i++) {
         for(int j = 0; j < p; j++) {
-            c_offset = (i * p) + j;
-            c[c_offset] = 0;
+            c_idx = (i * p) + j;
+            c[c_idx] = 0;
             for(int k = 0; k < n/num_threads; k++) {
                 x = a[(i * n) + k];
                 y = b[(k * p) + j];
-                c[c_offset] += x * y;
+                c[c_idx] += x * y;
             }
         }
     }
