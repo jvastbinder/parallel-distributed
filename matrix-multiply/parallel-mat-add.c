@@ -61,9 +61,9 @@ void distribute_matrices(int num_threads, char *a_file, char *b_file, int r, int
 void compute_section(int *c, int *a, int *b, int rows, int cols, int tid, int num_threads) {
     int bound;
     if(tid == 0)
-        bound = ((rows * cols) / num_threads);
+        bound = (rows * cols) - ((num_threads - 1) * ((rows * cols) / num_threads));
     else
-        bound = ((rows * cols) / num_threads) + ((rows * cols) % num_threads);
+        bound = ((rows * cols) / num_threads);
     for(int i = 0; i < bound; i++) {
         c[i] = a[i] + b[i];
     }
@@ -109,7 +109,7 @@ int main(int argc, char ** argv) {
     int c = rc[1];
     free(rc);
 
-    int zero_mat_size = ((r * c) / num_threads) + ((r * c) % num_threads);
+    int zero_mat_size = (r * c) - ((num_threads - 1) * ((r * c) / num_threads));
     int mat_size = ((r * c) / num_threads);
 
     int *a_part = malloc((sizeof(int) * zero_mat_size));
