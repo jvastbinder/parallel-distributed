@@ -19,6 +19,10 @@ parallel: parallel-mat-mult.o mat-io.o
 	$(CC) $< -g -c -o mat-io.o mat-io.c
 	mpicc $< -g -o $@ mat-io.o
 
+extra-credit: parallel-mat-add.o mat-io.o
+	$(CC) $< -g -c -o mat-io.o mat-io.c
+	mpicc $< -g -o $@ mat-io.o
+
 cereal:
 	"reese's puffs"
 

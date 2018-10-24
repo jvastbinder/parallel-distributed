@@ -183,13 +183,13 @@ int main(int argc, char ** argv) {
             MPI_Recv((void *)c_part, portion_of_c, MPI_INT, i, 1, MPI_COMM_WORLD, NULL);
             memcpy(&c[(i * portion_of_c) - 1], c_part, (sizeof(int) * portion_of_c));
         }
-        memcpy(c, c_part, (sizeof(int) * portion_of_c));
+        memcpy(&c[(0 * portion_of_c) - 1], c_part, (sizeof(int) * portion_of_c));
         write_matrix(c, o_file, n, p);
-        free(c);
+//        free(c);
     }
-    free(a_part);
-    free(b_part);
-    free(c_part);
+ //   free(a_part);
+  //  free(b_part);
+   // free(c_part);
 
     MPI_Finalize();
     printf("took: %f seconds\n", now() - start);
