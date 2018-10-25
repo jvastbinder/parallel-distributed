@@ -82,11 +82,7 @@ main(int argc, char **argv)
     read_matrix(a, a_file);
     read_matrix(b, b_file);
 
-    mat_print("C", a, m, n);
-    mat_print("C", b, n, p);
-
     mat_mult(c, a, b, m, n, p);
-    //mat_print("C", c, m, p);
     
     write_matrix(c, o_file, m, p);
 
