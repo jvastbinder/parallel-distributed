@@ -4,6 +4,9 @@
 #include <limits.h>
 #include <time.h>
 
+// CUDA runtime
+#include "/usr/local/cuda-9.0/include/cuda_runtime.h"
+
 /* Original permuation code due to D. Jimenez, UT Austin
  * http://faculty.cse.tamu.edu/djimenez/ut/utsa/cs3343/
  */
@@ -83,7 +86,7 @@ int random_seed = 42;
 int *
 create_tsp(int n)
 {
-  int *tsp = malloc(n * n * sizeof(int));
+  int *tsp = (int *) malloc(n * n * sizeof(int));
 
   srandom(random_seed);
   for (int i = 0;  i < n;  i++) {
@@ -168,6 +171,12 @@ usage(char *prog_name)
   exit(1);
 }
 
+__global__ void
+perm_kernel(int *v, int n, perm_action_t action) 
+{
+    printf("hello, world\n");
+}
+
 int
 main(int argc, char **argv)
 {
@@ -196,7 +205,8 @@ main(int argc, char **argv)
   }
 
   /* "Travel, salesman!" */
-  permutations(order, num_cities, eval_tsp);
+  perm_kernel<<<1, 10>>> (order, num_cities, eval_tsp);
+  //permutations(order, num_cities, eval_tsp);
 
   /* Report. */
   printf("\n");
@@ -206,3 +216,4 @@ main(int argc, char **argv)
 		 shortest_length, num_as_short, percent_as_short);
   printf("\n");
 }
+

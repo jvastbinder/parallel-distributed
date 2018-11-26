@@ -185,21 +185,11 @@ kth_perm(int k, int size)
 
 /* Swap v[i] and v[j] */
 void
-swap(int *v, int i, int j)
+k_swap(int *v, int i, int j)
 {
   int t = v[i];
   v[i] = v[j];
   v[j] = t;
-}
-
-/* Print a permutation array */
-void
-print_perm(int *perm, int size)
-{
-  for (int k = 0; k < size; k++) {
-	printf("%4d", perm[k]);
-  }
-  printf("\n");
 }
 
 /* Given an array of size elements at perm, update the array in place to
@@ -220,12 +210,12 @@ next_perm(int *perm, int size)
 	j = j - 1;
   }
 
-  swap(perm, i - 1, j - 1);
+  k_swap(perm, i - 1, j - 1);
 
   i++;
   j = size;
   while (i < j) {
-	swap(perm, i - 1, j - 1);
+	k_swap(perm, i - 1, j - 1);
 	i++;
 	j--;
   }
@@ -250,8 +240,6 @@ kth_perm_brute(int k, int size)
 	count++;
   }
 
-  print_perm(perm, size);
-
   free(perm);
 }
 
@@ -265,54 +253,8 @@ test_kth_perm(void)
 	for (int k = 1;  k <= factorial(size);  k++) {
 	  int *perm = kth_perm(k, size);
 	  printf("K = %4d    ", k);
-	  print_perm(perm, size);
 	  free(perm);
 	}
   }
 }
 
-/**** Driver ****************/
-
-int
-main(int argc, char **argv)
-{
-  const int k = 1000000;
-  const int size = 10;
-
-  test_kth_perm();
-
-  printf("\nFACTORIALS\n");
-  for (int i = 0;  i < 24;  i++) {
-	long f = factorial(i);
-	printf("%2d! = %20ld ~ %12.4g\n", i, f, (double)f);
-  }
-
-  printf("\nBRUTE\n");
-  kth_perm_brute(k, size);
-
-  printf("\nCOMBINATORIC\n");
-  int *perm = kth_perm(k, size);
-  print_perm(perm, size);
-
-  printf("\nNEXT FEW\n");
-  for (int i = 0;  i < 20;  i++) {
-	next_perm(perm, size);
-	print_perm(perm, size);
-  }
-
-  printf("\nTSP\n");
-  const long cities = 20;		/* Max of 20; else factorial overflows */
-  const long cores = 1024;
-  const long tours = factorial(cities);
-  const long tours_per_core = tours / cores;
-  printf("%ld cities\n", cities);
-  printf("%ld cores\n", cores);
-  printf("%20ld ~ %.4g tours\n", tours, (double)tours);
-  printf("%20ld ~ %.4g tours/core\n", tours_per_core, (double)tours_per_core);
-
-  for (int c = 0;  c < cores;  c+= cores / 8) {
-	long start_tour = tours_per_core * c;
-	long end_tour = start_tour + tours_per_core - 1;
-	printf("%4d: %19ld - %19ld\n", c, start_tour, end_tour);
-  }
-}
