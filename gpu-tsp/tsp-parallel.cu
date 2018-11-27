@@ -4,36 +4,12 @@
 #include <limits.h>
 #include <time.h>
 
-// CUDA runtime
-#include "/usr/local/cuda-9.0/include/cuda_runtime.h"
-
 /* Original permuation code due to D. Jimenez, UT Austin
  * http://faculty.cse.tamu.edu/djimenez/ut/utsa/cs3343/
  */
 
-/* Requires C99 compiler (gcc: -std=c99) */
-#define DEBUG 0
-#define debug_printf(fmt, ...) do { if (DEBUG) fprintf(stderr, fmt, __VA_ARGS__); } while (0)
-
 /* Reference an element in the TSP distance array. */
 #define TSP_ELT(tsp, n, i, j) *(tsp + (i * n) + j)
-
-/* Trivial action to pass to permutations--print out each one. */
-void
-print_perm(int *perm, int n, char *msge)
-{
-  for (int j = 0;  j < n;  j++) {
-	printf("%2d ", perm[j]);
-  }
-  printf(" - %s\n", msge);
-}
-
-/* No-op action */
-void
-nop(int *v, int n)
-{
-  return;
-}
 
 /* Create an instance of a symmetric TSP. */
 int *
@@ -71,24 +47,6 @@ print_tsp(int *tsp, int n, int random_seed)
   printf("\n");
 }
 
-__device__ void
-print_tsp_d(int *tsp, int n, int random_seed)
-{
-  printf("TSP (%d cities - seed %d)\n    ", n, random_seed);
-  for (int j = 0;  j < n;  j++) {
-	printf("%3d|", j);
-  }
-  printf("\n");
-  for (int i = 0;  i < n;  i++) {
-	printf("%2d|", i);
-	for (int j = 0;  j < n;  j++) {
-	  printf("%4d", TSP_ELT(tsp, n, i, j));
-	}
-	printf("\n");
-  }
-  printf("\n");
-}
-
 void
 usage(char *prog_name)
 {
@@ -100,15 +58,15 @@ usage(char *prog_name)
   exit(1);
 }
 
-__device__ long
+__device__ unsigned long
 factorial(int n)
 {
     if (n < 1) {
         return 0;
     }
 
-    long rtn = 1;
-    for (int i = 1;  i <= n;  i++) {
+    unsigned long rtn = 1;
+    for (unsigned i = 1;  i <= n;  i++) {
         rtn *= i;
     }
     return rtn;
@@ -118,7 +76,6 @@ factorial(int n)
 __device__ int 
 calc_cost(int *perm, int *matrix, int n)
 {
-    /* Calculate the length of the tour for the current permutation. */
     int total = 0;
     for (int i = 0;  i < n;  i++) {
         int j = (i + 1) % n;
@@ -267,31 +224,13 @@ kth_perm(int k, int size)
 
   list_t *perm = list_alloc(size);
 
-#if DEBUG
-  printf("k=%d, size=%d, remain=%ld\n", k, size, remain);
-  printf("  perm");
-  list_dump(perm);
-  printf("  nums");
-  list_dump(numbers);
-#endif
-
   for (int i = 1;  i < size;  i++) {
-	long f = factorial(size - i);
-	long j = remain / f;
+	unsigned long f = factorial(size - i);
+	unsigned long j = remain / f;
 	remain = remain % f;
-#if DEBUG
-	printf("i=%d, f=%ld j=%ld, remain=%ld\n", i, f, j, remain);
-#endif
 
 	list_add(perm, list_get(numbers, j));
 	list_remove_at(numbers, j);
-
-#if DEBUG
-	printf("  perm");
-	list_dump(perm);
-	printf("  nums");
-	list_dump(numbers);
-#endif
 
 	if (remain == 0) {
 	  break;
@@ -361,16 +300,15 @@ next_perm(int *perm, int size)
 __global__ void
 perm_kernel(int *glob_cost_matrix, int *min_matrix, int num_cities, int num_threads)
 {
-  //  extern __shared__ int cost_matrix[];
-   // memcpy(cost_matrix, glob_cost_matrix, sizeof(int) * num_cities * num_cities);
-    int *perm = (int *) malloc(sizeof(int) * num_cities);
-    int min_cost = INT_MAX;
+    //extern __shared__ int cost_matrix[];
+    //memcpy(cost_matrix, glob_cost_matrix, sizeof(int) * num_cities * num_cities);
     int tid = threadIdx.x;
     unsigned long num_iters = factorial(num_cities) / num_threads;
-    perm = kth_perm((num_iters * tid) + 1, num_cities);
+    int *perm = kth_perm((num_iters * tid) + 1, num_cities);
 
+    int min_cost = INT_MAX;
     int cost;
-    for(int i = 0; i < num_iters; i++)
+    for(unsigned long i = 0; i < num_iters; i++)
     {
         cost = calc_cost(perm, glob_cost_matrix, num_cities);
         if(cost < min_cost)
@@ -415,31 +353,37 @@ main(int argc, char **argv)
   int *min_matrix_h = (int *) malloc(min_matrix_size);
   int *cost_matrix_h = (int *) malloc(cost_matrix_size);
   int *min_matrix_d, *cost_matrix_d;
-  cudaMalloc((void **) &min_matrix_d, min_matrix_size);
-  cudaMalloc((void **) &cost_matrix_d, cost_matrix_size);
+  cudaMalloc(&min_matrix_d, min_matrix_size);
+  cudaMalloc(&cost_matrix_d, cost_matrix_size);
 
-  //create and copy cost matrix
+  //create and copy cost matrix to device
   create_tsp(cost_matrix_h, num_cities, random_seed);
   print_tsp(cost_matrix_h, num_cities, random_seed);
   cudaMemcpy(cost_matrix_d, cost_matrix_h, cost_matrix_size, cudaMemcpyHostToDevice);
 
-  dim3 blocks_per_grid(1);
+  //launch kernel
   dim3 threads_per_block(num_threads);
+  perm_kernel<<<1, threads_per_block>>>(cost_matrix_d, min_matrix_d, num_cities, num_threads);
 
+  //copy local mins back to host
+  cudaError_t rtn = cudaMemcpy(min_matrix_h, min_matrix_d, min_matrix_size, cudaMemcpyDeviceToHost);
+  if(rtn != 0)
+  {
+      printf("halp\n");
+      printf("%s\n", cudaGetErrorString(rtn));
+      exit(1);
+  }
+    
 
-  perm_kernel<<<blocks_per_grid, threads_per_block>>> (cost_matrix_d, min_matrix_d, num_cities, num_threads);
-
-  cudaMemcpy(min_matrix_h, min_matrix_d, min_matrix_size, cudaMemcpyDeviceToHost);
-
+  //calculate minimum
   int shortest_length = INT_MAX;
   for(int i = 0; i < num_threads; i++){
-      printf("%d ",min_matrix_h[i]);
+      printf("%d ", min_matrix_h[i]);
       if(min_matrix_h[i] < shortest_length)
       {
           shortest_length = min_matrix_h[i];
       }
   }
-  printf("\n");
   printf("\n");
   printf("Shortest %d", shortest_length);
   printf("\n");
