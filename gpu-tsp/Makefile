@@ -8,10 +8,10 @@ serial: tsp-serial.c
 	$(CC) $< -g -o $@
 
 parallel: tsp-parallel.cu
-	/usr/local/cuda-9.0/bin/nvcc $< -g -o $@
+	/usr/local/cuda-9.0/bin/nvcc $< -o $@
 
 cereal:
-	"reese's puffs"
+	milk "reese's puffs"
 
 .PHONY: clean
 clean:
