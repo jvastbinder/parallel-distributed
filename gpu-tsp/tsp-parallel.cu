@@ -159,9 +159,9 @@ list_size(list_t *list)
 
 /* Validate index */
 __device__ void
-_list_check_index(list_t *list, int index)
+_list_check_index(list_t *list, unsigned long index)
 {
-  if (index < 0 || index > list->cur_size - 1) {
+  if (index > list->cur_size - 1) {
 	printf("Invalid index %d\n", index);
 	list_dump(list);
   }
@@ -169,7 +169,7 @@ _list_check_index(list_t *list, int index)
 
 /* Get the value at given index */
 __device__ int
-list_get(list_t *list, int index)
+list_get(list_t *list, unsigned long index)
 {
   _list_check_index(list, index);
   return list->values[index];
@@ -300,9 +300,25 @@ next_perm(int *perm, int size)
 __global__ void
 perm_kernel(int *glob_cost_matrix, int *min_matrix, int num_cities, int num_threads)
 {
-    //extern __shared__ int cost_matrix[];
-    //memcpy(cost_matrix, glob_cost_matrix, sizeof(int) * num_cities * num_cities);
-    int tid = threadIdx.x;
+    int block_id = 
+        blockIdx.x +
+        blockIdx.y * blockDim.x +
+        blockIdx.z * blockDim.x * blockDim.y;
+    int block_offset =
+        block_id *
+        blockDim.x * blockDim.y * blockDim.z;
+    int thread_offset =
+        threadIdx.x +
+        threadIdx.y * blockDim.x +
+        threadIdx.z * blockDim.x * blockDim.y;
+    int tid = block_offset + thread_offset;
+    __shared__ int cost_matrix[144];
+    int init_iters = (num_cities * num_cities) / num_threads;
+    if(tid == 0)
+        init_iters += (num_cities * num_cities) % num_threads;
+    for(int i = 0; i < num_cities * num_cities; i++)
+        cost_matrix[i] = glob_cost_matrix[i];
+    __syncthreads();
     unsigned long num_iters = factorial(num_cities) / num_threads;
     int *perm = kth_perm((num_iters * tid) + 1, num_cities);
 
@@ -310,7 +326,7 @@ perm_kernel(int *glob_cost_matrix, int *min_matrix, int num_cities, int num_thre
     int cost;
     for(unsigned long i = 0; i < num_iters; i++)
     {
-        cost = calc_cost(perm, glob_cost_matrix, num_cities);
+        cost = calc_cost(perm, cost_matrix, num_cities);
         if(cost < min_cost)
         {
             min_cost = cost;
@@ -319,6 +335,16 @@ perm_kernel(int *glob_cost_matrix, int *min_matrix, int num_cities, int num_thre
     }
 
     min_matrix[tid] = min_cost;
+}
+
+double
+now(void)
+{
+    struct timespec current_time;
+    double ONE_BILLION = (double)1000000000.0;
+
+    clock_gettime(CLOCK_REALTIME, &current_time);
+    return current_time.tv_sec + (current_time.tv_nsec / ONE_BILLION);
 }
 
 int
@@ -345,6 +371,7 @@ main(int argc, char **argv)
 	  usage(argv[0]);
 	}
   }
+  double start = now();
 
   int cost_matrix_size = sizeof(int) * num_cities * num_cities;
   int min_matrix_size = sizeof(int) * num_threads;
@@ -358,34 +385,46 @@ main(int argc, char **argv)
 
   //create and copy cost matrix to device
   create_tsp(cost_matrix_h, num_cities, random_seed);
-  print_tsp(cost_matrix_h, num_cities, random_seed);
+//  print_tsp(cost_matrix_h, num_cities, random_seed);
   cudaMemcpy(cost_matrix_d, cost_matrix_h, cost_matrix_size, cudaMemcpyHostToDevice);
 
   //launch kernel
-  dim3 threads_per_block(num_threads);
-  perm_kernel<<<1, threads_per_block>>>(cost_matrix_d, min_matrix_d, num_cities, num_threads);
+  int threads_per_block = num_threads;
+  for(int i = 1; i < 1025; i *= 2)
+  {
+      if(i > num_threads)
+          break;
+      if(i < num_threads && (num_threads % i == 0))
+      {
+          threads_per_block = i;
+      }
+  }
+  int blocks_per_grid = num_threads / threads_per_block;
+
+  perm_kernel<<<blocks_per_grid, threads_per_block>>>(cost_matrix_d, min_matrix_d, num_cities, num_threads);
 
   //copy local mins back to host
   cudaError_t rtn = cudaMemcpy(min_matrix_h, min_matrix_d, min_matrix_size, cudaMemcpyDeviceToHost);
-  if(rtn != 0)
-  {
-      printf("halp\n");
-      printf("%s\n", cudaGetErrorString(rtn));
-      exit(1);
+  if(rtn != 0){
+      printf("Ouchie:\n%s\n", cudaGetErrorString(rtn));
   }
     
 
   //calculate minimum
   int shortest_length = INT_MAX;
   for(int i = 0; i < num_threads; i++){
-      printf("%d ", min_matrix_h[i]);
       if(min_matrix_h[i] < shortest_length)
       {
           shortest_length = min_matrix_h[i];
       }
   }
-  printf("\n");
-  printf("Shortest %d", shortest_length);
-  printf("\n");
+
+  double stop = now();
+  printf("Shortest %d\n", shortest_length);
+  printf("Blocks per grid:%d\n", blocks_per_grid);
+  printf("Threads per block:%d\n", threads_per_block);
+  printf("Num cities:%d\n", num_cities);
+  printf("Num threads:%d\n", num_threads);
+  printf("Took %5.3f seconds\n\n", stop - start);
 }
 

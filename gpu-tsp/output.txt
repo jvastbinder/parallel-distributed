@@ -1,0 +1,806 @@
+Num cities:0
+Num threads:1
+Took 0.063 seconds
+
+Num cities:0
+Num threads:2
+Took 0.049 seconds
+
+Num cities:0
+Num threads:4
+Took 0.048 seconds
+
+Num cities:0
+Num threads:8
+Took 0.048 seconds
+
+Num cities:0
+Num threads:16
+Took 0.048 seconds
+
+Num cities:0
+Num threads:32
+Took 0.048 seconds
+
+Num cities:0
+Num threads:64
+Took 0.051 seconds
+
+Num cities:0
+Num threads:128
+Took 0.049 seconds
+
+Num cities:0
+Num threads:256
+Took 0.049 seconds
+
+Num cities:0
+Num threads:512
+Took 0.057 seconds
+
+Num cities:0
+Num threads:1024
+Took 0.071 seconds
+
+Num cities:0
+Num threads:2048
+Took 0.054 seconds
+
+Num cities:0
+Num threads:4096
+Took 0.063 seconds
+
+Num cities:0
+Num threads:8192
+Took 0.079 seconds
+
+Num cities:0
+Num threads:16384
+Took 0.117 seconds
+
+Num cities:1
+Num threads:1
+Took 0.049 seconds
+
+Num cities:1
+Num threads:2
+Took 0.048 seconds
+
+Num cities:1
+Num threads:4
+Took 0.051 seconds
+
+Num cities:1
+Num threads:8
+Took 0.048 seconds
+
+Num cities:1
+Num threads:16
+Took 0.049 seconds
+
+Num cities:1
+Num threads:32
+Took 0.049 seconds
+
+Num cities:1
+Num threads:64
+Took 0.050 seconds
+
+Num cities:1
+Num threads:128
+Took 0.050 seconds
+
+Num cities:1
+Num threads:256
+Took 0.049 seconds
+
+Num cities:1
+Num threads:512
+Took 0.050 seconds
+
+Num cities:1
+Num threads:1024
+Took 0.055 seconds
+
+Num cities:1
+Num threads:2048
+Took 0.054 seconds
+
+Num cities:1
+Num threads:4096
+Took 0.061 seconds
+
+Num cities:1
+Num threads:8192
+Took 0.086 seconds
+
+Num cities:1
+Num threads:16384
+Took 0.128 seconds
+
+Num cities:2
+Num threads:1
+Took 0.048 seconds
+
+Num cities:2
+Num threads:2
+Took 0.049 seconds
+
+Num cities:2
+Num threads:4
+Took 0.047 seconds
+
+Num cities:2
+Num threads:8
+Took 0.048 seconds
+
+Num cities:2
+Num threads:16
+Took 0.048 seconds
+
+Num cities:2
+Num threads:32
+Took 0.048 seconds
+
+Num cities:2
+Num threads:64
+Took 0.048 seconds
+
+Num cities:2
+Num threads:128
+Took 0.048 seconds
+
+Num cities:2
+Num threads:256
+Took 0.049 seconds
+
+Num cities:2
+Num threads:512
+Took 0.053 seconds
+
+Num cities:2
+Num threads:1024
+Took 0.053 seconds
+
+Num cities:2
+Num threads:2048
+Took 0.062 seconds
+
+Num cities:2
+Num threads:4096
+Took 0.067 seconds
+
+Num cities:2
+Num threads:8192
+Took 0.079 seconds
+
+Num cities:2
+Num threads:16384
+Took 0.121 seconds
+
+Num cities:3
+Num threads:1
+Took 0.048 seconds
+
+Num cities:3
+Num threads:2
+Took 0.050 seconds
+
+Num cities:3
+Num threads:4
+Took 0.048 seconds
+
+Num cities:3
+Num threads:8
+Took 0.048 seconds
+
+Num cities:3
+Num threads:16
+Took 0.047 seconds
+
+Num cities:3
+Num threads:32
+Took 0.058 seconds
+
+Num cities:3
+Num threads:64
+Took 0.050 seconds
+
+Num cities:3
+Num threads:128
+Took 0.050 seconds
+
+Num cities:3
+Num threads:256
+Took 0.049 seconds
+
+Num cities:3
+Num threads:512
+Took 0.051 seconds
+
+Num cities:3
+Num threads:1024
+Took 0.054 seconds
+
+Num cities:3
+Num threads:2048
+Took 0.056 seconds
+
+Num cities:3
+Num threads:4096
+Took 0.063 seconds
+
+Num cities:3
+Num threads:8192
+Took 0.084 seconds
+
+Num cities:3
+Num threads:16384
+Took 0.119 seconds
+
+Num cities:4
+Num threads:1
+Took 0.059 seconds
+
+Num cities:4
+Num threads:2
+Took 0.051 seconds
+
+Num cities:4
+Num threads:4
+Took 0.048 seconds
+
+Num cities:4
+Num threads:8
+Took 0.048 seconds
+
+Num cities:4
+Num threads:16
+Took 0.048 seconds
+
+Num cities:4
+Num threads:32
+Took 0.048 seconds
+
+Num cities:4
+Num threads:64
+Took 0.048 seconds
+
+Num cities:4
+Num threads:128
+Took 0.050 seconds
+
+Num cities:4
+Num threads:256
+Took 0.054 seconds
+
+Num cities:4
+Num threads:512
+Took 0.050 seconds
+
+Num cities:4
+Num threads:1024
+Took 0.052 seconds
+
+Num cities:4
+Num threads:2048
+Took 0.054 seconds
+
+Num cities:4
+Num threads:4096
+Took 0.071 seconds
+
+Num cities:4
+Num threads:8192
+Took 0.100 seconds
+
+Num cities:4
+Num threads:16384
+Took 0.122 seconds
+
+Num cities:5
+Num threads:1
+Took 0.048 seconds
+
+Num cities:5
+Num threads:2
+Took 0.050 seconds
+
+Num cities:5
+Num threads:4
+Took 0.080 seconds
+
+Num cities:5
+Num threads:8
+Took 0.050 seconds
+
+Num cities:5
+Num threads:16
+Took 0.067 seconds
+
+Num cities:5
+Num threads:32
+Took 0.059 seconds
+
+Num cities:5
+Num threads:64
+Took 0.049 seconds
+
+Num cities:5
+Num threads:128
+Took 0.082 seconds
+
+Num cities:5
+Num threads:256
+Took 0.050 seconds
+
+Num cities:5
+Num threads:512
+Took 0.057 seconds
+
+Num cities:5
+Num threads:1024
+Took 0.052 seconds
+
+Num cities:5
+Num threads:2048
+Took 0.054 seconds
+
+Num cities:5
+Num threads:4096
+Took 0.063 seconds
+
+Num cities:5
+Num threads:8192
+Took 0.078 seconds
+
+Num cities:5
+Num threads:16384
+Took 0.131 seconds
+
+Num cities:6
+Num threads:1
+Took 0.051 seconds
+
+Num cities:6
+Num threads:2
+Took 0.049 seconds
+
+Num cities:6
+Num threads:4
+Took 0.048 seconds
+
+Num cities:6
+Num threads:8
+Took 0.050 seconds
+
+Num cities:6
+Num threads:16
+Took 0.048 seconds
+
+Num cities:6
+Num threads:32
+Took 0.049 seconds
+
+Num cities:6
+Num threads:64
+Took 0.049 seconds
+
+Num cities:6
+Num threads:128
+Took 0.049 seconds
+
+Num cities:6
+Num threads:256
+Took 0.050 seconds
+
+Num cities:6
+Num threads:512
+Took 0.050 seconds
+
+Num cities:6
+Num threads:1024
+Took 0.053 seconds
+
+Num cities:6
+Num threads:2048
+Took 0.054 seconds
+
+Num cities:6
+Num threads:4096
+Took 0.063 seconds
+
+Num cities:6
+Num threads:8192
+Took 0.086 seconds
+
+Num cities:6
+Num threads:16384
+Took 0.119 seconds
+
+Num cities:7
+Num threads:1
+Took 0.061 seconds
+
+Num cities:7
+Num threads:2
+Took 0.055 seconds
+
+Num cities:7
+Num threads:4
+Took 0.052 seconds
+
+Num cities:7
+Num threads:8
+Took 0.049 seconds
+
+Num cities:7
+Num threads:16
+Took 0.049 seconds
+
+Num cities:7
+Num threads:32
+Took 0.049 seconds
+
+Num cities:7
+Num threads:64
+Took 0.048 seconds
+
+Num cities:7
+Num threads:128
+Took 0.048 seconds
+
+Num cities:7
+Num threads:256
+Took 0.049 seconds
+
+Num cities:7
+Num threads:512
+Took 0.051 seconds
+
+Num cities:7
+Num threads:1024
+Took 0.051 seconds
+
+Num cities:7
+Num threads:2048
+Took 0.055 seconds
+
+Num cities:7
+Num threads:4096
+Took 0.066 seconds
+
+Num cities:7
+Num threads:8192
+Took 0.080 seconds
+
+Num cities:7
+Num threads:16384
+Took 0.126 seconds
+
+Num cities:8
+Num threads:1
+Took 0.132 seconds
+
+Num cities:8
+Num threads:2
+Took 0.091 seconds
+
+Num cities:8
+Num threads:4
+Took 0.069 seconds
+
+Num cities:8
+Num threads:8
+Took 0.059 seconds
+
+Num cities:8
+Num threads:16
+Took 0.054 seconds
+
+Num cities:8
+Num threads:32
+Took 0.056 seconds
+
+Num cities:8
+Num threads:64
+Took 0.051 seconds
+
+Num cities:8
+Num threads:128
+Took 0.050 seconds
+
+Num cities:8
+Num threads:256
+Took 0.050 seconds
+
+Num cities:8
+Num threads:512
+Took 0.050 seconds
+
+Num cities:8
+Num threads:1024
+Took 0.053 seconds
+
+Num cities:8
+Num threads:2048
+Took 0.064 seconds
+
+Num cities:8
+Num threads:4096
+Took 0.065 seconds
+
+Num cities:8
+Num threads:8192
+Took 0.077 seconds
+
+Num cities:8
+Num threads:16384
+Took 0.123 seconds
+
+Num cities:9
+Num threads:1
+Took 0.913 seconds
+
+Num cities:9
+Num threads:2
+Took 0.480 seconds
+
+Num cities:9
+Num threads:4
+Took 0.265 seconds
+
+Num cities:9
+Num threads:8
+Took 0.157 seconds
+
+Num cities:9
+Num threads:16
+Took 0.104 seconds
+
+Num cities:9
+Num threads:32
+Took 0.077 seconds
+
+Num cities:9
+Num threads:64
+Took 0.065 seconds
+
+Num cities:9
+Num threads:128
+Took 0.059 seconds
+
+Num cities:9
+Num threads:256
+Took 0.056 seconds
+
+Num cities:9
+Num threads:512
+Took 0.060 seconds
+
+Num cities:9
+Num threads:1024
+Took 0.054 seconds
+
+Num cities:9
+Num threads:2048
+Took 0.056 seconds
+
+Num cities:9
+Num threads:4096
+Took 0.064 seconds
+
+Num cities:9
+Num threads:8192
+Took 0.086 seconds
+
+Num cities:9
+Num threads:16384
+Took 0.116 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:10
+Num threads:1
+Took 8.361 seconds
+
+Num cities:10
+Num threads:2
+Took 5.099 seconds
+
+Num cities:10
+Num threads:4
+Took 2.578 seconds
+
+Num cities:10
+Num threads:8
+Took 1.321 seconds
+
+Num cities:10
+Num threads:16
+Took 0.700 seconds
+
+Num cities:10
+Num threads:32
+Took 0.384 seconds
+
+Num cities:10
+Num threads:64
+Took 0.248 seconds
+
+Num cities:10
+Num threads:128
+Took 0.151 seconds
+
+Num cities:10
+Num threads:256
+Took 0.110 seconds
+
+Num cities:10
+Num threads:512
+Took 0.098 seconds
+
+Num cities:10
+Num threads:1024
+Took 0.093 seconds
+
+Num cities:10
+Num threads:2048
+Took 0.092 seconds
+
+Num cities:10
+Num threads:4096
+Took 0.101 seconds
+
+Num cities:10
+Num threads:8192
+Took 0.105 seconds
+
+Num cities:10
+Num threads:16384
+Took 0.141 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:11
+Num threads:1
+Took 10.717 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:11
+Num threads:2
+Took 8.109 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:11
+Num threads:4
+Took 8.096 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:11
+Num threads:8
+Took 8.138 seconds
+
+Num cities:11
+Num threads:16
+Took 7.808 seconds
+
+Num cities:11
+Num threads:32
+Took 4.070 seconds
+
+Num cities:11
+Num threads:64
+Took 2.320 seconds
+
+Num cities:11
+Num threads:128
+Took 1.253 seconds
+
+Num cities:11
+Num threads:256
+Took 0.774 seconds
+
+Num cities:11
+Num threads:512
+Took 0.562 seconds
+
+Num cities:11
+Num threads:1024
+Took 0.540 seconds
+
+Num cities:11
+Num threads:2048
+Took 0.528 seconds
+
+Num cities:11
+Num threads:4096
+Took 0.584 seconds
+
+Num cities:11
+Num threads:8192
+Took 0.552 seconds
+
+Num cities:11
+Num threads:16384
+Took 0.457 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:1
+Took 9.528 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:2
+Took 8.065 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:4
+Took 8.115 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:8
+Took 8.100 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:16
+Took 8.086 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:32
+Took 8.150 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:64
+Took 8.072 seconds
+
+Ouchie:
+the launch timed out and was terminated
+Num cities:12
+Num threads:128
+Took 8.127 seconds
+
+Num cities:12
+Num threads:256
+Took 6.752 seconds
+
+Num cities:12
+Num threads:512
+Took 5.520 seconds
+
+Num cities:12
+Num threads:1024
+Took 6.655 seconds
+
+Num cities:12
+Num threads:2048
+Took 6.322 seconds
+
+Num cities:12
+Num threads:4096
+Took 6.608 seconds
+
+Num cities:12
+Num threads:8192
+Took 6.483 seconds
+
+Num cities:12
+Num threads:16384
+Took 4.808 seconds
+
