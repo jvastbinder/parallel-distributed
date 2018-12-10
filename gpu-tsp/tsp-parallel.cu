@@ -321,6 +321,7 @@ perm_kernel(int *glob_cost_matrix, int *min_matrix, int num_cities, int num_thre
     __syncthreads();
     unsigned long num_iters = factorial(num_cities) / num_threads;
     int *perm = kth_perm((num_iters * tid) + 1, num_cities);
+    print_perm(perm, num_cities);
 
     int min_cost = INT_MAX;
     int cost;
